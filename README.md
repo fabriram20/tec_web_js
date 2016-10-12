@@ -29,8 +29,10 @@ para utilizar un [link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemo
 
 ## Imagenes
 
-Para nosotros poder utilizar imagenes debemos escribir en parentesis el nombre de la imagen y entre paresentesis la URL
-![DOGE](https://upload.wikimedia.org/wikipedia/commons/5/58/Shiba_inu_taiki.jpg "Logo Title Text 1")
+Para nosotros poder utilizar imagenes debemos escribir en corchetes "[]" el nombre de la imagen y acontinuacion entre paresentesis"()" la URL de la imagen.
+
+
+![DOGE](https://upload.wikimedia.org/wikipedia/commons/5/58/Shiba_inu_taiki.jpg "Logo Title Text 5")
 
 ## Codigo
 
@@ -51,5 +53,16 @@ var mensaje= "Hola mundo";
 
 > Para crear Bloques se emplea el caracter ">"
 
- 
+## Tablas
 
+Para usar tablas necesitamos definir filas con "|"
+
+|Columna 1|Columna 2|Columna 3|Columna 4|
+|-|-|-|-|
+|valor 1 | valor 2 | valor 3| valor 4|
+|valor 1 | valor 2 | valor 3| valor 4|
+|valor 1 | valor 2 | valor 3| valor 4|
+|valor 1 | valor 2 | valor 3| valor 4|
+|valor 1 | valor 2 | valor 3| valor 4|
+|valor 1 | valor 2 | valor 3| valor 4| 
+|valor 1 | valor 2 | valor 3| valor 4|
