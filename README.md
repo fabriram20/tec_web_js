@@ -53,6 +53,10 @@ var mensaje= "Hola mundo";
 
 > Para crear Bloques se emplea el caracter ">"
 
+> Yo solo se que nada se
+> Un filosofo random
+
+
 ## Tablas
 
 Para usar tablas necesitamos definir filas con "|"
