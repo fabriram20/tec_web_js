@@ -29,7 +29,8 @@ para utilizar un [link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemo
 
 ## Imagenes
 
-Para nosotros poder utilizar imagenes debemos 
+Para nosotros poder utilizar imagenes debemos escribir en parentesis el nombre de la imagen y entre paresentesis la URL
+![DOGE](https://upload.wikimedia.org/wikipedia/commons/5/58/Shiba_inu_taiki.jpg "Logo Title Text 1")
 
 ## Codigo
 
@@ -43,3 +44,12 @@ Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar 
 ```javascript
 var mensaje= "Hola mundo";
 ```
+
+*****
+
+## Bloques
+
+> Para crear Bloques se emplea el caracter ">"
+
+ 
+
