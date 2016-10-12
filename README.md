@@ -58,11 +58,8 @@ var mensaje= "Hola mundo";
 Para usar tablas necesitamos definir filas con "|"
 
 |Columna 1|Columna 2|Columna 3|Columna 4|
-|-|-|-|-|
-|valor 1 | valor 2 | valor 3| valor 4|
-|valor 1 | valor 2 | valor 3| valor 4|
-|valor 1 | valor 2 | valor 3| valor 4|
-|valor 1 | valor 2 | valor 3| valor 4|
-|valor 1 | valor 2 | valor 3| valor 4|
-|valor 1 | valor 2 | valor 3| valor 4| 
-|valor 1 | valor 2 | valor 3| valor 4|
+| ------- | ------- | ------- | ------- |
+| valor 1 | valor 2 | valor  3| valor  4|
+| valor 1 | valor 2 | valor  3| valor  4|
+| valor 1 | valor 2 | valor  3| valor  4|
+| valor 1 | valor 2 | valor  3| valor  4|
