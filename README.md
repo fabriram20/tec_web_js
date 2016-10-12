@@ -51,9 +51,13 @@ var mensaje= "Hola mundo";
 
 ## Bloques (Citas no de humanos sino de texto)
 
+
 > Para crear Bloques se emplea el caracter ">"
 
+
 > Yo solo se que nada se.
+
+
 > Un filosofo random.
 
 
