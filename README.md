@@ -71,3 +71,10 @@ Para usar tablas necesitamos definir filas con "|"
 | valor 1 | valor 2 | valor  3| valor  4|
 | valor 1 | valor 2 | valor  3| valor  4|
 | valor 1 | valor 2 | valor  3| valor  4|
+
+
+## Youtube videos
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=TtSWo2nbzAk
+" target="_blank"><img src="http://img.youtube.com/vi/TtSWo2nbzAk/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
