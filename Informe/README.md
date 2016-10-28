@@ -1,11 +1,6 @@
 # Introducción a la Web
 
 ### Materia : `Tecnologías Web con JavaScript`
-
-<p align="center">
-<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="150">
-</p>
-
 ### Tema : `Introducción a la Web` 
 ### Fecha : `2016-10-27`
 ### Estudiante : `Fabrizio Eloy Ramirez Cutimbo`
@@ -107,6 +102,14 @@ Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmethods.asp)
 Fuente: [W3Schools](http://www.w3schools.com/html/html_intro.asp)
 <a href="#cabecera">A la cabecera</a>
 <br><br>
+#### Estructura Básica
+<p align="center">
+<img src="https://fjph32html.files.wordpress.com/2015/03/estructurabasica.png">
+</p>
+
+#### HTML5
+
+Es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 especifica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML5 que deberá servirse con sintaxis XML.
 
 ### Definición CSS
 
@@ -133,20 +136,44 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 
 <a name="desarrollo"></a>
 
+### NPM (Node Package Manager)
+NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript. Utilice la NGP para instalar, compartir y distribuir el código; administrar dependencias en sus proyectos; y compartir y recibir información con los demás. (Fuente: [NPM](https://www.npmjs.com/)).
+
+
 ## Desarrollo del informe
 
-### Imagenes desde Github **IMPORTANTE**
+### Inspeccionar paginas WEB usando Google Chrome
+### Analisis de protocolo HTTP usando Postman
+### Creación de un archivo HTML
+1. Para crear un archivo HTMl, se procede a crear un archivo 
 
-Se pueden usar imágenes desde nuestros archivos en github que constan de la siguiente URL:
+### Servicio HTTP con NPM
 
-- Github
-  * La url de github que es `https://github.com` 
-- Usuario
-  * La url de usuario de github que en este caso es: `/adrianeguez` 
-- Repositorio
+1. Se accede ala carpeta donde se encuentra el archivo index.html
+<p align="center">
+<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+</p>
+
+2. En dicho directorio se presion la tecla Shift + click derecho y se seleccion la opcion "abrir vetana de comando Aqui".
+3. Se escribe el comando, para instalar el servicio HTTP de forma global en el sistema:
+> npm install -g http-server
+
+4. Se levanta el servicio HTTP con el siguiente comando:
+> http-server -c10 
+<p align="center">
+<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+</p>
+
+5. Finalmente podemos acceder a nuestra pagina web a traves de cualquier navedador digitando la siguiente dirección:
+> localhost:8080
+<p align="center">
+<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+</p>
 
 
-<br>
+
+### Creacion de Pagina web basica con HTML y CSS
+
 <a href="#cabecera">A la cabecera</a>
 
 ## Conclusiones y Recomendaciones
