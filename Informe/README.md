@@ -62,11 +62,14 @@ El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio i
 <img src="http://www.dataversity.net/wp-content/uploads/sites/2/2013/12/w3c.jpg">
 </p>
 
+### W3Schools
+Es un sitio web popular para el aprendizaje de las tecnologías web en línea. El contenido incluye tutoriales y referencias relacionadas con HTML, CSS, JavaScript, PHP, SQL, Bootstrap, y jQuery. Que recibe más de 10 millones de visitantes únicos mensuales. Creado en 1998, su nombre se deriva de la World Wide Web, pero no está afiliado con el W3C (World Wide Web Consortium). Está dirigido por Refsnes datos en Noruega. W3Schools presenta miles de ejemplos de código. Mediante el uso de un editor en línea, los lectores pueden editar ejemplos y ejecutar el código en una SandBox. (fuente: [Wikipedia](https://en.wikipedia.org/wiki/W3Schools)).
+
 ### Hypertext Transfer Protocol
 
 Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force. Es un protocolo orientado a transacciones y sigue el esquema petición-respuesta entre un cliente y un servidor. El cliente (se le suele llamar "agente de usuario", en inglés user agent) realiza una petición enviando un mensaje, con cierto formato al servidor, El servidor (se le suele llamar un servidor web) le envía un mensaje de respuesta. Ejemplos de cliente son los navegadores web y los spider. (fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol)).
 
-#### Versiones
+### Versiones
 
 * 0.9 (lanzada en 1991)
 * HTTP/1.0 (mayo de 1996)
@@ -74,7 +77,7 @@ Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hi
 * HTTP/1.2 (febrero de 2000)
 * HTTP/2 (mayo de 2015)
 
-#### Mensajes
+### Mensajes
 
 Número | Tipo
 --- | --- 
@@ -84,20 +87,38 @@ Número | Tipo
 4xx | Client Error
 5xx | Server Error
 
+Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmessages.asp)
+
 #### Métodos
 
 Method | Description
 --- | --- 
 GET | The GET method requests a representation of the specified resource.
 POST | The POST method requests that the server accept the entity enclosed in the request. 
-HEAD | Same as GET but returns only HTTP headers and no document body
-PUT | Uploads a representation of the specified URI
-DELETE | Deletes the specified resource
-OPTIONS	| Returns the HTTP methods that the server supports
-CONNECT | Converts the request connection to a transparent TCP/IP tunnel
+HEAD | Same as GET but returns only HTTP headers and no document body.
+PUT | Uploads a representation of the specified URI.
+DELETE | Deletes the specified resource.
+OPTIONS	| Returns the HTTP methods that the server supports.
+CONNECT | Converts the request connection to a transparent TCP/IP tunnel.
 
+Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmethods.asp)
+<a href="#cabecera">A la cabecera</a>
+<br><br>
 ### Definición CSS
 
+* CSS significa Cascading Style Sheets.
+* CSS se describe cómo son elementos HTML que se mostrará en la pantalla, papel, o en otros medios.
+* CSS ahorra mucho trabajo. Se puede controlar el diseño de varias páginas web a la vez.
+* Permite almacenar estilos externos en archivos CSS.
+
+<p align="center">
+<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+</p>
+
+
+Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
+
+<a href="#cabecera">A la cabecera</a>
 
 ### Postman
 
@@ -106,6 +127,7 @@ CONNECT | Converts the request connection to a transparent TCP/IP tunnel
 
 
 <a name="desarrollo"></a>
+
 ## Desarrollo del informe
 
 ### Imagenes desde Github **IMPORTANTE**
