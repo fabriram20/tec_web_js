@@ -3,7 +3,7 @@
 ### Materia : `Tecnologías Web con JavaScript`
 
 <p align="center">
-<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="100">
+<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="150">
 </p>
 
 ### Tema : `Introducción a la Web` 
@@ -41,18 +41,7 @@ El tema de la práctica es: `Introduccion a la Web`
 <a name="marco-teorico"></a>
 ## Marco Teorico
 <a name="defhtml"></a>
-### Definición HTML
 
-En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
-<br>
-<a href="#cabecera">A la cabecera</a>
-
-<br><br>
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
-</p>
-<br><br>
-<a name="hist"></a>
 
 ### Definición WWW 
 El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo. Este consorcio fue creado en octubre de 1994, y está dirigido por Tim Berners-Lee, el creador original del URL (Uniform Resource Locator, Localizador Uniforme de Recursos), del HTTP (HyperText Transfer Protocol, Protocolo de Transferencia de HiperTexto) y del HTML (Hyper Text Markup Language, Lenguaje de Marcado de HiperTexto), que son las principales tecnologías sobre las que se basa la Web.(fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web_Consortium)).
@@ -102,6 +91,23 @@ CONNECT | Converts the request connection to a transparent TCP/IP tunnel.
 Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmethods.asp)
 <a href="#cabecera">A la cabecera</a>
 <br><br>
+
+### Definición HTML
+
+* HTML significa Hyper Text Markup Language.
+* HTML describe la estructura de las páginas Web usando Markup.
+* Los elementos HTML son los bloques de construcción de páginas HTML.
+* Los elementos HTML están representados por etiquetas.
+* HTML Tags etiquetan piezas de contenido, tales como "heading", "paragraph", "table", y así sucesivamente. Los navegadores no muestran las etiquetas HTML, pero los utilizan para representar el contenido de la página.
+
+<p align="center">
+<img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" width="250" height="190">
+</p>
+
+Fuente: [W3Schools](http://www.w3schools.com/html/html_intro.asp)
+<a href="#cabecera">A la cabecera</a>
+<br><br>
+
 ### Definición CSS
 
 * CSS significa Cascading Style Sheets.
@@ -113,9 +119,8 @@ Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmethods.asp)
 <img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
 </p>
 
-
 Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
-
+<br>
 <a href="#cabecera">A la cabecera</a>
 
 ### Postman
