@@ -143,15 +143,41 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 ## Desarrollo del informe
 
 ### Inspeccionar paginas WEB usando Google Chrome
-### Analisis de protocolo HTTP usando Postman
-### Creación de un archivo HTML
-1. Para crear un archivo HTMl, se procede a crear un archivo 
+1. Accedemos a Google Chrome, aunque se puede emplear cualquier otro navegador.
+2. Accedemos ala pagina principal de [Google](google.com.ec). 
+3. Damos Click derecho en cualquier parte de la pantalla y nos dirigimos ala opcion Inspeccionar elemento, nos mostrará la siguiente informacion:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/Google.png?raw=true">
+</p>
+4. Por defeto nos ubicamos en la pestaña `Elements`. Donde podemos visualizar el codigo html de la pagina web a la que acabamos de acceder. en la parte inferior se muestran los estilos e informacion adicional.
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/GoogleInspeccionarElements.png?raw=true">
+</p>
+5. En esta seccion podemos realizar cambios temporales a la pagina web. por ejemplo cambiar los colores.
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/GoogleInspeccionarElementsBackground.png?raw=true">
+</p>
+6. A continuacion nos dirigimos ala pestaña `Networks` donde sera ncesario presionar`F5` para recargar la pagina, en esta seccion podremos apreciar todos los elementos recibidos desde el servidor de google.
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/GoogleInspeccionarNetwork.png?raw=true">
+</p>
+7. Si seleccionamos cualquier archivo, se tendra acceso a informacion tal como, las cabeceras, vista previa, respuestas y tiempo.
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/GoogleInspeccionarNetworkStatus.png?raw=true">
+</p>
 
+### Analisis de protocolo HTTP usando Postman
+### Creacion de Pagina web basica con HTML y CSS
+1. Para crear un archivo HTML, se procede a crear un archivo con la extencion `.html`
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/index.png?raw=true">
+</p>
+2. 
 ### Servicio HTTP con NPM
 
 1. Se accede ala carpeta donde se encuentra el archivo index.html
 <p align="center">
-<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/NPMinstalacion.png?raw=true">
 </p>
 
 2. En dicho directorio se presion la tecla Shift + click derecho y se seleccion la opcion "abrir vetana de comando Aqui".
@@ -161,18 +187,15 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 4. Se levanta el servicio HTTP con el siguiente comando:
 > http-server -c10 
 <p align="center">
-<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/Levantar%20servicio%20HTTP.png?raw=true">
 </p>
 
 5. Finalmente podemos acceder a nuestra pagina web a traves de cualquier navedador digitando la siguiente dirección:
 > localhost:8080
 <p align="center">
-<img src="http://desarrollolibre.net/public/download/empty/empty-con-otras-pseudo-class/css3.jpg">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/PaginaWeb.png?raw=true">
 </p>
 
-
-
-### Creacion de Pagina web basica con HTML y CSS
 
 <a href="#cabecera">A la cabecera</a>
 
