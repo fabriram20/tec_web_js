@@ -1,49 +1,20 @@
-# Estructura
-
-Un informe debe de seguir la siguiente estructura:
-
-- **Cabecera**
-  * Materia
-  * Tema
-  * Fecha
-  * Nombre
-  * Nombre del Profesor (TANIA CALLE Y ADRIAN EGUEZ)
-  * Número de Informe (El número de informe es secuencial)
-- **Índice de contenidos**
-  * En el indice de contenidos debemos de tener los indices y sub indices (excepto de la cabecera y el índice) de toda la estructura del informe.
-- **Tema**
-  * Un nombre o descrición por ejemplo (Tags HTML o Introducción a la Web)
-- **Objetivos**
-  * Los objetivos es que es lo que se va a lograr con los informes, si en clase se aprendio acerca de DOCTYPEs entonces eso es un objetivo, si aprendierono TAGS HTML, ese es otro objetivo y así.
-- **Marco Teorico**
-  * En el Marco Teórico, lo que nos interesa es describir los conceptos que revisamos dentro de la clase, por ejemplo si revisamos el concepto de `navegador` entonces describiremos que es un navegador con referencias osea un LINK AL RECURSO, si es un libro el link a una pagina informativad del libro y en que parte del libro se encontro dicha información.
-- **Desarrollo de la Práctica**
-  * El desarrollo de la práctica son `capturas` de pantalla de lo que se hizo en clases y su `descripción`, por ejemplo si se utilizo el postman para conectarse con google y revisar los códigos de estatus HTTP, eso es lo que deberia de ir en las imágenes y descripciones.
-- **Conclusiones y Recomendaciones**
-  * Conclusiones son que objetivos se lograron y que se aprendió haciendo esos objetivos.
-  * Recomendaciones son que temas también o cuales temas estuvieron de más abordados en la clase, o también cómo se podría mejorar esa práctica.
-
-# Ejemplo de informe
-
-El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo que interesa es la estructura.
-
 # Introducción a la Web
 
 ### Materia : `Tecnologías Web con JavaScript`
 
 <p align="center">
-<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200">
+<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="200" height="100">
 </p>
 
 ### Tema : `Introducción a la Web` 
-### Fecha : `2016-10-21`
-### Estudiante : `Vicente Adrian Eguez Sarzosa`
+### Fecha : `2016-10-27`
+### Estudiante : `Fabrizio Eloy Ramirez Cutimbo`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `1`
 
 <a name="cabecera"></a>
-## Índice de contenidos
 
+## Índice de contenidos
 
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
@@ -54,6 +25,7 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
+
 ## Tema
 El tema de la práctica es: `Introduccion a la Web`
 
@@ -63,6 +35,8 @@ El tema de la práctica es: `Introduccion a la Web`
 - Desarrollar el conocimiento Web
 - Conocer herramientas de desarrolladores web como: postman, inspetor web
 - Aprender el uso de lenguaje HTML CSS
+- Levantar un servidor http
+- Creacion de una pagina web con Html
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
