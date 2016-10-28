@@ -54,8 +54,6 @@ En informática, la World Wide Web (WWW) o red informática mundial1 es un siste
 <br><br>
 <a name="hist"></a>
 
-
-
 ### Definición WWW 
 El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo. Este consorcio fue creado en octubre de 1994, y está dirigido por Tim Berners-Lee, el creador original del URL (Uniform Resource Locator, Localizador Uniforme de Recursos), del HTTP (HyperText Transfer Protocol, Protocolo de Transferencia de HiperTexto) y del HTML (Hyper Text Markup Language, Lenguaje de Marcado de HiperTexto), que son las principales tecnologías sobre las que se basa la Web.(fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web_Consortium)).
 <p align="center">
@@ -122,9 +120,11 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 
 ### Postman
 
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/PostmanDefinition.png?raw=true">
+</p>
 
 <a href="#cabecera">A la cabecera</a>
-
 
 <a name="desarrollo"></a>
 
@@ -139,49 +139,7 @@ Se pueden usar imágenes desde nuestros archivos en github que constan de la sig
 - Usuario
   * La url de usuario de github que en este caso es: `/adrianeguez` 
 - Repositorio
-  * El repositorio de Github que estamos usando, en este caso es `/Tec_Web_Js_2016_B`
-- Rama o  Branch
-  * La rama de nuestro repositorio en este formato: `/blob/master`
-- El PATH
-  * La direccíon de nuesto archivo por ejemplo `/carpeta/subcarpeta/subsubcarpeta/archivo.png` en este ejemplo es `/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png` 
-- RAW
-  * Por ultimo mandamos un Query String Parameter de la con la variable `raw` y valor `true` de la siguiente manera: `?raw=true`
-  
-**Al final** nuestro url queda de la siguiente manera:
 
-#### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
-
-<p align="center">
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-</p>
-
-Por ultimo podemos centrar las imagenes de la siguiente manera:
-
-
-```
-<p align="center">
-
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-
-</p>
-```
-
-### Links dentro de github
-
-Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
-
-1. Definir un anchor name donde nosotros queramos mover cuando demos clic de la siguiente manera y formate (**NOTESE QUE ESTAN JUNTAS**):
-
-  ```
-  <a name="nombre"></a>
-  ## titulo2
-  ```
-2. Después de esto debemos de linkear mediante un texto por ejemplo en una lista de la siguiente manera (**NO ELVIDAR EL `#`**):
- 
-  ```
-  - <a href="#nombre">Dale clic aqui para ir al titulo 2</a>
-  ```
-  <a name="conrec"></a>
 
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -196,8 +154,3 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 <br>
 <a href="#cabecera">A la cabecera</a>
-
-
-# ¡Gracias por su atención!
-
-Author: [Adrian Eguez](https://github.com/adrianeguez)
