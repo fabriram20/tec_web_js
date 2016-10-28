@@ -143,13 +143,13 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 ## Desarrollo del informe
 
 ### Inspeccionar paginas WEB usando Google Chrome
-1. Accedemos a Google Chrome, aunque se puede emplear cualquier otro navegador.
+1. Iniciamos el navegador Google Chrome, aunque se puede emplear cualquier otro navegador.
 2. Accedemos ala pagina principal de [Google](google.com.ec). 
 3. Damos Click derecho en cualquier parte de la pantalla y nos dirigimos ala opcion Inspeccionar elemento, nos mostrará la siguiente informacion:
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/Google.png?raw=true">
 </p>
-4. Por defeto nos ubicamos en la pestaña `Elements`. Donde podemos visualizar el codigo html de la pagina web a la que acabamos de acceder. en la parte inferior se muestran los estilos e informacion adicional.
+4. Por defecto nos ubicamos en la pestaña `Elements`. Donde podemos visualizar el codigo html de la pagina web a la que acabamos de acceder. en la parte inferior se muestran los estilos e informacion adicional.
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/GoogleInspeccionarElements.png?raw=true">
 </p>
@@ -167,12 +167,61 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 </p>
 
 ### Analisis de protocolo HTTP usando Postman
+
+1.Primero es necesario instalar la aplicacion [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop).
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/Instalar%20Postman.png?raw=true">
+</p>
+2.Procedemos a ejecutar Postman a traves de nuestro navegador web. El entorno de la aplicacion se presenta acontinuación:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/EntornoPostman.png?raw=true">
+</p>
+3.Realizmos una peticion a la siguiente URL [PokeAPI](http://pokeapi.co/api/v2/pokemon/1/)con el metodo `GET` y observamos los resultado:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/PostmanGET1.png?raw=true">
+</p>
+Como se puede apreciar nos devuelve toda l ainformacion del primer Pokemos.
+4.Realizamos una segunda peticion a la misma URL pero con el metodo `POST`:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/PostmanPOST.png?raw=true">
+</p>
+Como podemos observar la pagina rechaza nuestra peticion, afirmando que es una request no permitida.
+
+
 ### Creacion de Pagina web basica con HTML y CSS
 1. Para crear un archivo HTML, se procede a crear un archivo con la extencion `.html`
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/index.png?raw=true">
 </p>
-2. 
+2. A continuacion con ayuda de nuestro editor Brackets procederemos a codificar nuestra pagina web, como se menciono en el marco teorico, es necesario tener una estructura básica.
+
+3. Imagenes en HTML: Para insertar una imagen se emplearà la etiqueta `<img>`.
+
+<a href="https://es.wikipedia.org/wiki/Saint_Seiya" target="_blank">
+    
+    <img src="https://ugc.kn3.net/i/origin/http://www.ssiceplanet.net/personajes/s_oro/afrodita1.jpg" alt="Caballero del Zodiaco posando">
+        
+</a>
+<br>
+4.Listas No Ordenadas: se utiliza el tag `<ul></ul>` y dentro el tag `<li></li>`, a continuacion un fragmento del código:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/listaNoOrdenadaCodigo.png?raw=true">
+</p>
+
+5.Tambien se puede utilizar EMMET para crear de forma rapida un numero determinado de elementos de una lista, acontinuacion un fragmento del código.
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/listaNoOrdenadaCodigoEMMET.png?raw=true">
+</p>
+6. Listas Ordenadas: se utiliza el tag `<ul></ul>` y dentro el tag `<ol></ol>`, a continuacion un fragmento del código:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/listaOrdenadaCodigo.png?raw=true">
+</p>
+7.Esta es una captura de las listas anteriores visualizadas en un navegador.
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/ListasPaginaWeb.png?raw=true">
+</p>
+8.El código completo de la pagina web se encuentra disponible [aquí]().
+
 ### Servicio HTTP con NPM
 
 1. Se accede ala carpeta donde se encuentra el archivo index.html
@@ -201,11 +250,13 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 
 ## Conclusiones y Recomendaciones
 
-- Se recomienda mejorar la presentacion
-- Se recomienda usar el ir a cabecera despues de terminar una seccion
-- Se aprendio el uso de HTML con Markdown
-- Conocimos herramientas de desarrollo web como postman e inspector web
-- Desarrollamos conocimientos de introducción Web
+- Se aprendió la sintaxis y los elementos  basicos de un archivo HTML.
+- Se empleo Postman para analizar los paquetes enviados entre el servidor y el cliente.
+- Se emplearon los tutoriales disponibles en W3School.
+- Se levanto un servicio HTTP para previsualizar una pagina web como localhost.
+- Se realizo una documentacion aducada, para retener los conceptos recibidos en clase.
+- Se recomienda tomar capturas durante el desarrollo de la clase.
+
 
 <br>
 <a href="#cabecera">A la cabecera</a>
