@@ -53,10 +53,55 @@ En informática, la World Wide Web (WWW) o red informática mundial1 es un siste
 </p>
 <br><br>
 <a name="hist"></a>
-### Historia y Facts
 
-La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés Tim Berners-Lee con la ayuda del belga Robert Cailliau mientras trabajaban en el CERN en Ginebra, Suiza, y publicado en 1992. Desde entonces, Berners-Lee ha jugado un papel activo guiando el desarrollo de estándares Web (como los lenguajes de marcado con los que se crean las páginas web), y en los últimos años ha abogado por su visión de una Web semántica. Utilizando los conceptos de sus anteriores sistemas de hipertexto como ENQUIRE, el físico británico Tim Berners-Lee, un científico de la computación y en ese tiempo de los empleados del CERN, ahora director del World Wide Web Consortium (W3C), escribió una propuesta en marzo de 1989 con lo que se convertiría en la World Wide Web.4 la propuesta de 1989 fue destinada a un sistema de comunicación CERN pero Berners-Lee finalmente se dio cuenta que el concepto podría aplicarse en todo el mundo.5 En la CERN, la organización europea de investigación cerca de Ginebra, en la frontera entre Francia y Suiza,6 Berners-Lee y el científico de la computación belga Robert Cailliau propusieron en 1990 utilizar el hipertexto "para vincular y acceder a información de diversos tipos como una red de nodos en los que el usuario puede navegar a voluntad",7 y Berners-Lee terminó el primer sitio web en diciembre de ese año.8 Berners-Lee publicó el proyecto en el grupo de noticias alt.hypertext el 7 de agosto de 1991. (Fuente: <a href="https://es.wikipedia.org/wiki/World_Wide_Web">Wikipedia</a>)
-<br>
+
+
+### Definición WWW 
+El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo. Este consorcio fue creado en octubre de 1994, y está dirigido por Tim Berners-Lee, el creador original del URL (Uniform Resource Locator, Localizador Uniforme de Recursos), del HTTP (HyperText Transfer Protocol, Protocolo de Transferencia de HiperTexto) y del HTML (Hyper Text Markup Language, Lenguaje de Marcado de HiperTexto), que son las principales tecnologías sobre las que se basa la Web.(fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web_Consortium)).
+<p align="center">
+<img src="http://www.dataversity.net/wp-content/uploads/sites/2/2013/12/w3c.jpg">
+</p>
+
+### Hypertext Transfer Protocol
+
+Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force. Es un protocolo orientado a transacciones y sigue el esquema petición-respuesta entre un cliente y un servidor. El cliente (se le suele llamar "agente de usuario", en inglés user agent) realiza una petición enviando un mensaje, con cierto formato al servidor, El servidor (se le suele llamar un servidor web) le envía un mensaje de respuesta. Ejemplos de cliente son los navegadores web y los spider. (fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol)).
+
+#### Versiones
+
+* 0.9 (lanzada en 1991)
+* HTTP/1.0 (mayo de 1996)
+* HTTP/1.1 (junio de 1999)
+* HTTP/1.2 (febrero de 2000)
+* HTTP/2 (mayo de 2015)
+
+#### Mensajes
+
+Número | Tipo
+--- | --- 
+1xx | Informational
+2xx | Success
+3xx | Redirection
+4xx | Client Error
+5xx | Server Error
+
+#### Métodos
+
+Method | Description
+--- | --- 
+GET | The GET method requests a representation of the specified resource.
+POST | The POST method requests that the server accept the entity enclosed in the request. 
+HEAD | Same as GET but returns only HTTP headers and no document body
+PUT | Uploads a representation of the specified URI
+DELETE | Deletes the specified resource
+OPTIONS	| Returns the HTTP methods that the server supports
+CONNECT | Converts the request connection to a transparent TCP/IP tunnel
+
+### Definición CSS
+
+
+### Postman
+
+
 <a href="#cabecera">A la cabecera</a>
 
 
