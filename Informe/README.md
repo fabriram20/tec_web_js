@@ -14,9 +14,23 @@
 - <a href="#tema">Tema</a>
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
-  * <a href="#hist">Historia y Facts</a>
-  * <a href="#defhtml">Definicion HTML</a>
+  * <a href="#defWWW">Definición WWW</a>
+  * <a href="#defW3">W3Schools</a>
+  * <a href="#defHTTP">Hypertext Transfer Protocol</a>
+    * <a href="#ver">Versiones</a>
+    * <a href="#men">Mensajes</a>
+    * <a href="#met">Métodos</a>
+  * <a href="#defHTML">Definición HTML</a>
+    * <a href="#est">Estructura Básica</a>
+    * <a href="#html5">HTML5</a>
+  * <a href="#defCSS">Definición CSS</a>
+  * <a href="#defPOS">Postman</a>  
+  * <a href="#defNPM">NPM (Node Package Manager)</a> 
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
+  * <a href="#des1">Inspeccionar paginas WEB usando Google Chrome</a>
+  * <a href="#des2">Analisis del protocolo HTTP usando Postman</a>
+  * <a href="#des3">Creacion de Pagina web basica con HTML y CSS 1</a>
+  * <a href="#des4"> Servicio HTTP con NPM</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
@@ -35,22 +49,23 @@ El tema de la práctica es: `Introduccion a la Web`
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
-<a name="defhtml"></a>
 
-
+<a name="defWWW"></a>
 ### Definición WWW 
 El Consorcio WWW, en inglés: World Wide Web Consortium (W3C), es un consorcio internacional que genera recomendaciones y estándares que aseguran el crecimiento de la World Wide Web a largo plazo. Este consorcio fue creado en octubre de 1994, y está dirigido por Tim Berners-Lee, el creador original del URL (Uniform Resource Locator, Localizador Uniforme de Recursos), del HTTP (HyperText Transfer Protocol, Protocolo de Transferencia de HiperTexto) y del HTML (Hyper Text Markup Language, Lenguaje de Marcado de HiperTexto), que son las principales tecnologías sobre las que se basa la Web.(fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web_Consortium)).
 <p align="center">
 <img src="http://www.dataversity.net/wp-content/uploads/sites/2/2013/12/w3c.jpg">
 </p>
 
+<a name="defW3"></a>
 ### W3Schools
 Es un sitio web popular para el aprendizaje de las tecnologías web en línea. El contenido incluye tutoriales y referencias relacionadas con HTML, CSS, JavaScript, PHP, SQL, Bootstrap, y jQuery. Que recibe más de 10 millones de visitantes únicos mensuales. Creado en 1998, su nombre se deriva de la World Wide Web, pero no está afiliado con el W3C (World Wide Web Consortium). Está dirigido por Refsnes datos en Noruega. W3Schools presenta miles de ejemplos de código. Mediante el uso de un editor en línea, los lectores pueden editar ejemplos y ejecutar el código en una SandBox. (fuente: [Wikipedia](https://en.wikipedia.org/wiki/W3Schools)).
 
+<a name="defHTTP"></a>
 ### Hypertext Transfer Protocol
 
 Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hipertexto) es el protocolo de comunicación que permite las transferencias de información en la World Wide Web. HTTP fue desarrollado por el World Wide Web Consortium y la Internet Engineering Task Force. Es un protocolo orientado a transacciones y sigue el esquema petición-respuesta entre un cliente y un servidor. El cliente (se le suele llamar "agente de usuario", en inglés user agent) realiza una petición enviando un mensaje, con cierto formato al servidor, El servidor (se le suele llamar un servidor web) le envía un mensaje de respuesta. Ejemplos de cliente son los navegadores web y los spider. (fuente: [Wikipedia](https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol)).
-
+<a name="ver"></a>
 ### Versiones
 
 * 0.9 (lanzada en 1991)
@@ -58,7 +73,7 @@ Hypertext Transfer Protocol o HTTP (en español protocolo de transferencia de hi
 * HTTP/1.1 (junio de 1999)
 * HTTP/1.2 (febrero de 2000)
 * HTTP/2 (mayo de 2015)
-
+<a name="men"></a>
 ### Mensajes
 
 Número | Tipo
@@ -71,6 +86,7 @@ Número | Tipo
 
 Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmessages.asp)
 
+<a name="met"></a>
 #### Métodos
 
 Method | Description
@@ -87,6 +103,7 @@ Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmethods.asp)
 <a href="#cabecera">A la cabecera</a>
 <br><br>
 
+<a name="defHTML"></a>
 ### Definición HTML
 
 * HTML significa Hyper Text Markup Language.
@@ -102,15 +119,18 @@ Fuente: [W3Schools](http://www.w3schools.com/tags/ref_httpmethods.asp)
 Fuente: [W3Schools](http://www.w3schools.com/html/html_intro.asp)
 <a href="#cabecera">A la cabecera</a>
 <br><br>
+<a name="est"></a>
 #### Estructura Básica
 <p align="center">
 <img src="https://fjph32html.files.wordpress.com/2015/03/estructurabasica.png">
 </p>
 
+<a name="html5"></a>
 #### HTML5
 
 Es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML. HTML5 especifica dos variantes de sintaxis para HTML: una «clásica», HTML (text/html), conocida como HTML5, y una variante XHTML conocida como sintaxis XHTML5 que deberá servirse con sintaxis XML.
 
+<a name="defCSS"></a>
 ### Definición CSS
 
 * CSS significa Cascading Style Sheets.
@@ -126,6 +146,7 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="defPOS"></a>
 ### Postman
 
 <p align="center">
@@ -136,12 +157,14 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 
 <a name="desarrollo"></a>
 
+<a name="defNPM"></a>
 ### NPM (Node Package Manager)
 NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecución para JavaScript. Utilice la NGP para instalar, compartir y distribuir el código; administrar dependencias en sus proyectos; y compartir y recibir información con los demás. (Fuente: [NPM](https://www.npmjs.com/)).
 
 
 ## Desarrollo del informe
 
+<a name="des1"></a>
 ### Inspeccionar paginas WEB usando Google Chrome
 1. Iniciamos el navegador Google Chrome, aunque se puede emplear cualquier otro navegador.
 2. Accedemos ala pagina principal de [Google](google.com.ec). 
@@ -166,7 +189,8 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/GoogleInspeccionarNetworkStatus.png?raw=true">
 </p>
 
-### Analisis de protocolo HTTP usando Postman
+<a name="des2"></a>
+### Analisis del protocolo HTTP usando Postman
 
 1.Primero es necesario instalar la aplicacion [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop).
 <p align="center">
@@ -176,7 +200,7 @@ NPM es el manejador de paquetes por defecto para Node.js, un entorno de ejecuci�
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/EntornoPostman.png?raw=true">
 </p>
-3.Realizmos una peticion a la siguiente URL [PokeAPI](http://pokeapi.co/api/v2/pokemon/1/)con el metodo `GET` y observamos los resultado:
+3.Realizmos una peticion a la siguiente URL [PokeAPI](http://pokeapi.co/api/v2/pokemon/1/) con el metodo `GET` y observamos los resultado:
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/PostmanGET1.png?raw=true">
 </p>
@@ -187,7 +211,7 @@ Como se puede apreciar nos devuelve toda l ainformacion del primer Pokemos.
 </p>
 Como podemos observar la pagina rechaza nuestra peticion, afirmando que es una request no permitida.
 
-
+<a name="des3"></a>
 ### Creacion de Pagina web basica con HTML y CSS
 1. Para crear un archivo HTML, se procede a crear un archivo con la extencion `.html`
 <p align="center">
@@ -220,8 +244,9 @@ Como podemos observar la pagina rechaza nuestra peticion, afirmando que es una r
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/01-HTML/Informe/Imagenes/ListasPaginaWeb.png?raw=true">
 </p>
-8.El código completo de la pagina web se encuentra disponible [aquí]().
+8.El código completo de la pagina web se encuentra disponible [aquí](https://github.com/fabriram20/tec_web_js/blob/01-HTML/HTML/Index.html).
 
+<a name="des4"></a>
 ### Servicio HTTP con NPM
 
 1. Se accede ala carpeta donde se encuentra el archivo index.html
