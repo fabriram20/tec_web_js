@@ -112,7 +112,17 @@
                 }
             ]
         }
-        console.log(fabrizio);
+        
+        console.log('Para acceder al nombre usamos fabrizio.nombre');
+        console.log(fabrizio.nombre);
+        console.log('Para acceder al apellido usamos fabrizio.apellido');
+        console.log(fabrizio.apellido);
+        
+        function getNombreFabrizio(){
+        return fabrizio.nombre;
+        }
+        
+        console.log(getNombreFabrizio());
 
         //        Este es un ejemplo comparativo con xml
         //    <fabrizio>
