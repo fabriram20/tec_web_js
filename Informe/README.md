@@ -2,7 +2,7 @@
 
 ### Materia : `Tecnologías Web con JavaScript`
 ### Tema : `Introducción a CSS` 
-### Fecha : `2016-10-27`
+### Fecha : `2016-10-31`
 ### Estudiante : `Fabrizio Eloy Ramirez Cutimbo`
 ### Profesor : `Tania Calle - Adrian Eguez`
 ### Número de informe : `2`
@@ -26,6 +26,8 @@
 ## Tema
 El tema de la práctica es: `Introduccion a CSS`
 
+<a href="#cabecera">A la cabecera</a>
+
 <a name="objetivos"></a>
 ## Objetivos
 
@@ -33,6 +35,7 @@ El tema de la práctica es: `Introduccion a CSS`
 - Crear un archivo de estilos CSS
 - Crear una pagina web con Html y CSS
 
+<a href="#cabecera">A la cabecera</a>
 <a name="marco-teorico"></a>
 ## Marco Teorico
 
@@ -52,6 +55,7 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="sintaxis"></a>
 ### Sintaxis CSS
 
 Una regla CSS consta de un selector y un bloque de declaración:
@@ -69,6 +73,7 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="cascada"></a>
 ### Cascading Order
 
 ¿Qué estilo se utilizará cuando haya más de un estilo especificado para un elemento HTML?
