@@ -17,6 +17,7 @@
   * <a href="#defCSS">Definición CSS</a>
   * <a href="#sintaxis">Sintaxis CSS</a>  
   * <a href="#cascada">Cascading Order</a> 
+  * <a href="#bootstrap">Bootstrap</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
 - <a href="#conclusiones">Conclusiones y Recomendaciones</a> 
 
@@ -87,7 +88,19 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 <a name="bootstrap"></a>
 ### Bootstrap
 
+Es un framework de web front-end gratuito y de código abierto para diseñar sitios web y aplicaciones web. Contiene plantillas de diseño basadas en HTML y CSS para tipografía, formularios, botones, navegación y otros componentes de interfaz, así como extensiones de JavaScript opcionales. A diferencia de muchos marcos web, se ocupa solo del desarrollo front-end. Bootstrap es el segundo proyecto más visto en GitHub, con más de 100.000 estrellas y 45.000 bifurcaciones.
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/220px-Boostrap_logo.svg.png">
+</p>
+
+Fuente: [Wikipedia](https://en.wikipedia.org/wiki/Bootstrap) 
+
+Fuente: [Bootstrap](http://getbootstrap.com/css/#overview)
+
 <a href="#cabecera">A la cabecera</a>
+
+
+
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 *NOTA: Para el desarrollo de esta practica es necesario levantar el sevicio HTTP, que ya ha sido explicado en el informe 01.
