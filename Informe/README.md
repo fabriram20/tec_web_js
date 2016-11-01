@@ -78,19 +78,64 @@ En términos generales, podemos decir que todos los estilos se "conectarán" en 
 2. Hojas de estilo externas e internas (en la sección de cabezal)
 3. Predeterminado del navegador
 
-Por lo tanto, un estilo en línea (dentro de un elemento HTML específica) tiene la prioridad más alta, lo que significa que va a anular un estilo definido dentro de la etiqueta <head>, o en una hoja de estilos externa, o bien un valor por defecto del navegador.
+Por lo tanto, un estilo en línea (dentro de un elemento HTML específica) tiene la prioridad más alta, lo que significa que va a anular un estilo definido dentro de la etiqueta `<head>`, o en una hoja de estilos externa, o bien un valor por defecto del navegador.
 
 Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="bootstrap"></a>
+### Bootstrap
+
+<a href="#cabecera">A la cabecera</a>
 <a name="desarrollo"></a>
 ## Desarrollo del informe
+*NOTA: Para el desarrollo de esta practica es necesario levantar el sevicio HTTP, que ya ha sido explicado en el informe 01.
 
+### Creación de Estilos dentro de HTML
+* Primero procedemos a crear el tag `<Style>` dentro de la cabecera, lo cual nos permitira agregar lenguaje CSS dentro de un archivo HTML.
+* A continuacion un fragmento del codigo y el resultado visualizado en un navegador:
 
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/02-html/Informe/Graficos/CSSD01.png?raw=true">
+</p>
 
+### Creación de clases con CSS
+* Dentro del tag `<Style>` se pueden crear clasea aplicando el siguiente formato
+> .nombreClase{}
 
+* Para poder invocar una clase dentro del archivo HTML se utilizara el siguiente formato:
+> < tag class="nombreClase">Contenido</ tag >
 
+* A continuacion un fragmento del codigo y el resultado visualizado en un navegador:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/02-html/Informe/Graficos/CSSD02.png?raw=true">
+</p>
+
+### Agregando estilos desde un directorio local
+* Para tener un mejor control de los estilos es recomendable crear un archivo css dentro de la carpeta local y referenciarla desde el archivo html empleado el siguiente tag:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/02-html/Informe/Graficos/CSSD03.png?raw=true">
+</p>
+* Tambien pueden existir ams de un archivo css de estilos, ubicados en difrentes carpeta, todos ellos pueden ser referenciables, sin embargo solo uno afectara al archivo HTML debido a la propiedad Cascading order:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/02-html/Informe/Graficos/CSSD04.png?raw=true">
+</p>
+
+### Referencia a Estilos Externos con Bootstrap
+
+* Podemos referencias estilos almacenados en distintas partes de la web para ello usaremos bootstrap como ejemplo:
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/02-html/Informe/Graficos/CSSD05.png?raw=true">
+</p>
+
+### Creacion de tablas
+
+* Para la creacion de tablas emplearemos contenedores los cuales se crean usando la etiqueta `<div>`, ademas emplearemos la clase `row` (fila) y `col`(columna).
+
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/02-html/Informe/Graficos/CSSD06.png?raw=true">
+</p>
 <a href="#cabecera">A la cabecera</a>
 <a name="conclusiones"></a>
 ## Conclusiones y Recomendaciones
@@ -101,7 +146,7 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 - Se puede insertar codigo CSS dentro de un archivo HTML, sin embargo es recomendable que esten separados.
 - CSS genera modularidad dentro de una pagina web.
 - El orden de cascada determina que tipo de estilo afectara el contenido visible.
-- Se levanto un servicio HTTP para previsualizar una pagina web como localhost.ç
+- Se levanto un servicio HTTP para previsualizar una pagina web como localhost.
 - Se recomienda tomar capturas durante las clases.
 
 
