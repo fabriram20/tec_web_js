@@ -15,14 +15,10 @@
 - <a href="#objetivos">Objetivos</a>
 - <a href="#marco-teorico">Marco Teorico</a>
   * <a href="#defCSS">Definición CSS</a>
-  * <a href="#defPOS">Postman</a>  
-  * <a href="#defNPM">NPM (Node Package Manager)</a> 
+  * <a href="#sintaxis">Sintaxis CSS</a>  
+  * <a href="#cascada">Cascading Order</a> 
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
-  * <a href="#des1">Inspeccionar paginas WEB usando Google Chrome</a>
-  * <a href="#des2">Analisis del protocolo HTTP usando Postman</a>
-  * <a href="#des3">Creacion de Pagina web basica con HTML y CSS 1</a>
-  * <a href="#des4"> Servicio HTTP con NPM</a>
-- <a href="#conrec">Conclusiones y Recomendaciones</a> 
+- <a href="#conclusiones">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
 
@@ -88,13 +84,15 @@ Fuente: [W3Schools](http://www.w3schools.com/css/css_intro.asp)
 <br>
 <a href="#cabecera">A la cabecera</a>
 
-
+<a name="desarrollo"></a>
 ## Desarrollo del informe
 
 
 
-<a href="#cabecera">A la cabecera</a>
 
+
+<a href="#cabecera">A la cabecera</a>
+<a name="conclusiones"></a>
 ## Conclusiones y Recomendaciones
 
 - Se aprendió la sintaxis y los elementos  basicos de un archivo CSS.
