@@ -110,19 +110,32 @@
                     'nombre': 'Matias',
                     'apellido': 'Ramirez',
                 }
-            ]
+            ],
+            getNombre: function () {
+                return this.nombre;
+            },
+            getApellido: function () {
+                return this.apellido;
+            },
+            
+            setApellido: function(nuevoApellido) {
+                this.apellido = nuevoApellido;
+            }
         }
-        
-        console.log('Para acceder al nombre usamos fabrizio.nombre');
-        console.log(fabrizio.nombre);
-        console.log('Para acceder al apellido usamos fabrizio.apellido');
-        console.log(fabrizio.apellido);
-        
-        function getNombreFabrizio(){
-        return fabrizio.nombre;
+
+        //        console.log('Para acceder al nombre usamos fabrizio.nombre');
+        //        console.log(fabrizio.nombre);
+        //        console.log('Para acceder al apellido usamos fabrizio.apellido');
+        //        console.log(fabrizio.apellido);
+
+        function getNombreFabrizio() {
+            return fabrizio.nombre;
         }
-        
-        console.log(getNombreFabrizio());
+
+        console.log(fabrizio.getNombre());
+        console.log(fabrizio.getApellido());
+        fabrizio.setApellido('Ramirez');
+        console.log(fabrizio.getApellido());
 
         //        Este es un ejemplo comparativo con xml
         //    <fabrizio>
