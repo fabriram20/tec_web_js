@@ -31,13 +31,13 @@
 El tema de la práctica es: `Bootstrap`
 <a href="#cabecera">A la cabecera</a>
 <a name="objetivos"></a>
+
 ## Objetivos
 
-- Desarrollar 
-- Conocer
-- Aprender 
+- Conocer como funciona el sistema CDN
+- Aprender a utilizar el CDN de bootstrap.
 - Levantar un servidor http
-- Crear
+- Crear una pagina web utilizando los estilos de Bootstrap
 
 <a href="#cabecera">A la cabecera</a>
 
