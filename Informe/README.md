@@ -103,6 +103,8 @@ Para utilizar esta opcion debemos usar el tag <code>&lt;code&gt;</code> el cual 
 </p>
 <code>&lt;Ejemplo-Texto&gt;</code>
 
+<a href="#cabecera">A la cabecera</a>
+
 <a name="userinput"></a>
 
 ### User Input
@@ -111,8 +113,10 @@ Esta opcion nos permite resaltar las entradas e usuario con el fin de resaltar `
 <p align="center">
 <img src="https://github.com/fabriram20/tec_web_js/blob/03-Bootstrap/Informe/Imagenes/UserInput.png?raw=true">
 </p>
+
+<a href="#cabecera">A la cabecera</a>    
     
-<a name="basicblock"></a>
+<a name="block"></a>
 
 ### Basic Block
 
@@ -153,7 +157,7 @@ Sin embargo el formulario es muy grande y no se ve estéticamente bien, por este
 
 <a href="#cabecera">A la cabecera</a>
 
-<a name="conclusiones"></a>
+<a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
 - Bootstrap provee una libreria de estilos muy utiles.
