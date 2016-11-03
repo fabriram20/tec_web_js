@@ -108,6 +108,7 @@ La pagina de bootstrap nos ofrece formularios hecho los cuales copiamos para nue
 </p>
 
 Sin embargo el formulario es muy grande y no se ve estéticamente bien, por este motivo, emplearemos `contenedores` los cuales se crear con el tag <code>&lt;div class='container'&gt;</code>. Luego, dentro del contenedor crearemos una tabla en la cual ubicaremos nuestro formulario, dentro de una de las celadas, esto brindara mayor orden para nuestra pagina web. A continuacion el fragmenteo de codigo y la vista en un navegador.
+
 <p align="center">
 <img src="">
 </p>
