@@ -9,10 +9,11 @@
     <meta charset="UTF-8">
     <title>Aprendiendo HTML</title>
 
-
     <!-- Latest compiled and minified CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <style>
@@ -34,6 +35,29 @@
 
     <h2>Forms</h2>
 
+    <form>
+<!--
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+-->
 
     <div class="container">
         <div class="row">
@@ -57,25 +81,38 @@
     </div>
 
 
+    <h2>Inline con Bootstrap</h2>
 
+    <p>Ejemplo de como insertar código Inline
+        <code>&lt;Ejemplo-Texto&gt;</code>
+    </p>
 
     <h2>User inputs con Bootstrap</h2>
 
-    <p>No esta permitido por ejemplo el
+    <p>Ejemplo como insertar UserInputs:
+        <br>Para copiar un texto usamos el comando:
         <kbd>
         <kbd>ctrl</kbd> +
-        <kbd>c</kbd>
+        <kbd>c </kbd>
         </kbd>
-        ni el
+        y luego para pegar el texto usamos el comando:
         <kbd>
     <kbd>ctrl</kbd> +
         <kbd>v</kbd>
         </kbd>
     </p>
+
+    <h2>Basic Block con Bootstrap</h2>
+
+    <p>Ejemplo de como insertar un bloque de código
+        <pre>&lt;Ejemplo-Insertar-Texto-aquí &gt;</pre>
+    </p>
+
+
     <h2>Tablas</h2>
-
-
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered
+                  table-hover
+                  table-striped">
         <!--   TABLE ROW    -->
         <tr>
             <!--   TABLE HEADER    -->
@@ -83,19 +120,29 @@
             <th>Contact</th>
             <th>Country</th>
         </tr>
-        <!--   TABLE ROW    -->
         <tr>
             <!--   TABLE DETAIL    -->
             <td>Alfreds Futterkiste</td>
             <td>Marria Anders</td>
             <td>Germany</td>
         </tr>
-        <!--   TABLE ROW    -->
         <tr>
             <!--   TABLE DETAIL    -->
             <td>Centro comercial Moctezuma</td>
             <td>Francisco Del Diablo</td>
             <td>Mexico</td>
+        </tr>
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial El Recreo</td>
+            <td>Armando Paredes</td>
+            <td>Ecuador</td>
+        </tr>
+        <tr>
+            <!--   TABLE DETAIL    -->
+            <td>Centro comercial El Girasol</td>
+            <td>Benito Camelas</td>
+            <td>Tangamandapio</td>
         </tr>
     </table>
 
