@@ -175,7 +175,19 @@ Las funciones en javascript pueden definirse de forma global o propias de algun 
 
 <a href="#cabecera">A la cabecera</a>
 <a name="conclusiones"></a>
-## Conclusiones y Recomendaciones<p align="center">
+## Conclusiones y Recomendaciones
+
+* HTML es como el esqueleto de una pagina web, CSS es la parte visible, mientras que javascript permite mover los componentes que están dentro de html.
+* Javascript se usa tanto para la web, como para aplicaciones móviles hibridas. Se pueden creara juegos, interfaces decentes, consultas en base de datos no relacionales, también puede funcionar como servidor.
+* Javascript es considerado el ingles de los lenguajes de programación.
+* Javascript permite aumentar clases.
+* Es recomendable colocar los estilos en la cabecera. Y ubicaremos los javascript al final del Body
+* JSBIN viene predeterminado para ejecutar automáticamente con JavaScript, es mejor tenerlo siempre activo.
+
+
+
+
+<p align="center">
 <img src="https://cms-assets.tutsplus.com/uploads/users/15/posts/24117/preview_image/ecmascript.png" width="200" height="150">
 </p>
 
