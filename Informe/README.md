@@ -32,11 +32,10 @@ El tema de la práctica es: `Javascript`.
 <a name="objetivos"></a>
 ## Objetivos
 
-- Desarrollar 
-- Conocer
-- Aprender 
-- Levantar un servidor http
-- Crear
+- Estudiar los conceptos basicos de Javascript.
+- Estudiar la libreria JQUERY.
+- Aprender a desarrollar paginas web en JSBIN.
+- Levantar un servidor http.
 
 <a href="#cabecera">A la cabecera</a>
 <a name="marco-teorico"></a>
