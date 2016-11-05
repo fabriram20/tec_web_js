@@ -88,38 +88,38 @@ JS Bin is ultimately a code sharing site. Along with the code, the complete outp
 * Utilizaremos la apliacion web  [JSBIN](https://jsbin.com), Donde tenemos  un ambiente de desarrollo, con previsualizacion y consola.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS1x1.png?raw=true">
 </p>
 
 * Luego ingresamos al pagina [bootstrap](https://www.bootstrapcdn.com/) para sacar los CDN de CSS yJavaScript, ambos se deben referenciar a nuestro archivo html de la siguiente manera:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS1x2.png?raw=true">
 </p>
  
 * Sin embargo esto nos da un error en la consola, porque es necesario emplear la libreria JQUERY, para solucionar este problema nos dirigimos a la pagina [JQUERY](https://code.jquery.com/).
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS1x3.png?raw=true">
 </p>
 
 * Copiamos el fragmento de código en nuestro archivo html, con esto ya no tenemos el problema de falta de librerias. Recordar que HTMl es como un árbol, de modo que el orden en el cual referenciamos las librerías si importa, entonces el orden seria el siguiente:
 Primero la librería JQUERY, luego el cdn de javascript y finalmente el cdn de css.
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS1x4.png?raw=true">
 </p>
     
 * A continuación nos dirigimos ala pagina de bootstrap, para poder exrtraer fragmentos de código que copiaremos en nuestro proyecto de JSBIN. En la pestaña javascript de bootstrap, en la sección de “dropdown” podemos copiar un fragmento de código y el resultado es el siguiente:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS1x5.png?raw=true">
 </p>
 
 * Finalmente podemos ubicar el apartado Navbar donde copiaremos un fragmento de código y el resultado es el siguiente:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS1x6.png?raw=true">
 </p>
 
 Nota: el link de la pagina generada es  el siguinte: [https://jsbin.com/loyuqezawi/edit?html,output](https://jsbin.com/loyuqezawi/edit?html,output).
@@ -132,31 +132,31 @@ Para ejecutar codigo de java script dentro de un archivo html, es necesario ubic
 * Enla interfaz de JSBIn creamos un boton y le asignamos un evento cuando se de doble click:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x1.png?raw=true">
 </p>
 
 * Creamos un archivo `index.html`, levantamos un servicio http y crearemos un mensaje de alerta con javascript:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x2.png?raw=true">
 </p>
 
 * Para definir variables en java script, basta con escribir `var`, en este lenguaje no existe distincion entre, enteros, decimales, caracteres o booleanos, simplemente existen varibles. Se realizo un ejercio para transformar numeros enteros, a caracteres, booleanos, etc demostrando la versatilidad de este lenguaje:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x3.png?raw=true">
 </p>
 
 * Los arreglos se definen como un conjunto de variables agrupadas entre corchetes. Se pueden almacenar variables dediferente tipo en un mismo arreglo, este es un punto fuerte de javascript:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x4.png?raw=true">
 </p>
 
 * Los objetos en javascript, se definene como variables que contienen atributos y estas a su vez pueden contener otros atributos:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x5.png?raw=true">
 </p>
 
 Las funciones en javascript pueden definirse de forma global o propias de algun objeto:
@@ -164,13 +164,13 @@ Las funciones en javascript pueden definirse de forma global o propias de algun 
 * Para definirlas de forma global acontinuación se muestra como definir e invocarla una funcion;
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x6.png?raw=true">
 </p>
 
 * O pueden ser propias de un objeto, como se muestra acontinuación, donde se define el metodo get y set dentro del objeto fabrizio y luego se lo invoca:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/04-javascript-parte2/Informe/Imagenes/JS2x7.png?raw=true">
 </p>
 
 <a href="#cabecera">A la cabecera</a>
@@ -183,13 +183,6 @@ Las funciones en javascript pueden definirse de forma global o propias de algun 
 * Javascript permite aumentar clases.
 * Es recomendable colocar los estilos en la cabecera. Y ubicaremos los javascript al final del Body
 * JSBIN viene predeterminado para ejecutar automáticamente con JavaScript, es mejor tenerlo siempre activo.
-
-
-
-
-<p align="center">
-<img src="https://cms-assets.tutsplus.com/uploads/users/15/posts/24117/preview_image/ecmascript.png" width="200" height="150">
-</p>
 
 
 <a href="#cabecera">A la cabecera</a>
