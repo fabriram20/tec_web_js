@@ -309,19 +309,45 @@
         //        console.log(mystery2(4,7));
         //        
         //
-        
-        
+
+
         // ParkRangers que alimetna alas ovejas¡¡¡
+
+        //        function feedPerRanger(numSheep, numRanger){            
+        //            alert('Each Park Ranger should load '+ numSheep*2/numRanger + ' lbs of feed today');                                    
+        //        }
+        //        
+        //        feedPerRanger(4,2);
         
-        function feedPerRanger(numSheep, numRanger){            
-            alert('Each Park Ranger should load '+ numSheep*2/numRanger + ' lbs of feed today');                                    
+//        // Arreglos 2D
+//        
+//        var movie1 = [16, "Candles"];
+//        var movie2 = [3, "Men", "and", "a", "Baby"];
+//        var eightiesMovies = [movie1, movie2];
+//        
+//        var infante = eightiesMovies[1][4];
+//        console.log(infante);
+//        
+        
+        // Iteration over Array Contents
+        
+        var array=[1, 2.5, 'Holoo', true, "52", false, 52, "yaa", 2.3]
+        function numString(array){
+            
+            var num = 0;
+            
+            for(var i=0; i<=array.length; i++){
+                if(typeof array[i] == 'String'){
+                    num++;
+                }
+            }
+
+            return num;
         }
         
-        feedPerRanger(4,2);
-        
-        
                 
-        
+                console.log(numString(array));
+                
         
     </script>
 
