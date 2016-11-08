@@ -204,22 +204,61 @@
 
         // Ejercicio imprimir numero pares del 2 al 10
 
-        var count = 10;
-        var arregloNumero = [];
-        console.log('Empieza');
+        //        var count = 10;
+        //        var arregloNumero = [];
+        //        console.log('Empieza');
+        //
+        //        while (count > 0) {
+        //
+        //            if (count > 2 && count <= 10) {
+        //                if (count % 2 == 0) {
+        //                    console.log('El numero ' + count + ' es par');
+        //                }
+        //            }
+        //
+        //            count--;
+        //        }
+        //        
+        //      Ejercio Control de ovejas, si es mayor a 10000 se envia la mitad a otro lugar
 
-        while (count > 0) {
+        //                var numSheep=4;
+        //                var monthNumber = 1;
+        //                var monthsToPrint = 12;
+        //                
+        //               
+        //                for (monthNumber; monthNumber<=monthsToPrint; monthNumber++){
+        //                    
+        //                    console.log('There will be '+ numSheep*4 +' sheep after '+ monthNumber+' month(s)');
+        //                    numSheep = numSheep*4; 
+        //                    
+        //                    if(numSheep>10000){
+        //                    numSheep = numSheep/2;
+        //                    console.log('Ovejas - '+ numSheep);
+        //                    }                    
+        //                }
 
-            if (count > 2 && count <= 10) {
-                if (count % 2 == 0) {
-                    console.log('El numero ' + count + ' es par');
-                }
+        // ejercicio Control de ovejas 2
+
+        var numSheep = 4;
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+
+
+        for (monthNumber; monthNumber <= monthsToPrint; monthNumber++) {
+
+            console.log('There will be ' + numSheep * 4 + ' sheep after ' + monthNumber + ' month(s)');
+            numSheep = numSheep * 4;
+        
+        if (monthNumber % 4 == 0) {
+            numSheep = numSheep * 0.25,
+                console.log('Ovejas - 75% : ' + numSheep);
+        } else {
+            if (numSheep > 10000) {
+                numSheep = numSheep / 2;
+                console.log('Ovejas / 2: ' + numSheep);
             }
-
-            count--;
         }
-        
-        
+        }
     </script>
 
 
