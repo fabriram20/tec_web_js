@@ -150,18 +150,20 @@
         var arregloNumero =[];
         console.log('Empieza');
         
-        while (count > 0){
+        while (count>0){
             
             if (count%2==0){
-                console.log('El numero 'count' es par');   
+                console.log('El numero '+ count+ ' es par');   
             }else{
-                console.log('El numero 'count' es impar'); 
+                console.log('El numero '+ count+ ' es impar'); 
             }
-            arregloNumero.push(count)
+            arregloNumero.push(count);
             count--;
         }        
         console.log('Se acaba');
         console.log(arregloNumero);
+        arregloNumero.pop();
+        
             
     </script>
 
