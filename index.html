@@ -97,47 +97,47 @@
 
         //        OBJETOS
 
-        var fabrizio = {
-            'nombre': 'Fabrizio',
-            'apellido': 'Ramirez',
-            edad: 21,
-            mascotas: ['Cachetes', 'Oso', 'BJ'],
-            hermanos: [{
-                    'nombre': 'Enrique',
-                    'apellido': 'Ramirez'
-                },
-                {
-                    'nombre': 'Matias',
-                    'apellido': 'Ramirez',
-                }
-            ],
-            getNombre: function () {
-                return this.nombre;
-            },
-            getApellido: function () {
-                return this.apellido;
-            },
+        //        var fabrizio = {
+        //            'nombre': 'Fabrizio',
+        //            'apellido': 'Ramirez',
+        //            edad: 21,
+        //            mascotas: ['Cachetes', 'Oso', 'BJ'],
+        //            hermanos: [{
+        //                    'nombre': 'Enrique',
+        //                    'apellido': 'Ramirez'
+        //                },
+        //                {
+        //                    'nombre': 'Matias',
+        //                    'apellido': 'Ramirez',
+        //                }
+        //            ],
+        //            getNombre: function () {
+        //                return this.nombre;
+        //            },
+        //            getApellido: function () {
+        //                return this.apellido;
+        //            },
+        //
+        //            setApellido: function (nuevoApellido) {
+        //                this.apellido = nuevoApellido;
+        //            }
+        //        }
 
-            setApellido: function (nuevoApellido) {
-                this.apellido = nuevoApellido;
-            }
-        }
+        //        console.log('Para acceder al nombre usamos fabrizio.nombre');
+        //        console.log(fabrizio.nombre);
+        //        console.log('Para acceder al apellido usamos fabrizio.apellido');
+        //        console.log(fabrizio.apellido);
+        //
+        //        console.log(getNombreFabrizio());
+        //        
+        //        function getNombreFabrizio() {
+        //            return fabrizio.nombre;
+        //        }
 
-//        console.log('Para acceder al nombre usamos fabrizio.nombre');
-//        console.log(fabrizio.nombre);
-//        console.log('Para acceder al apellido usamos fabrizio.apellido');
-//        console.log(fabrizio.apellido);
-//
-//        console.log(getNombreFabrizio());
-//        
-//        function getNombreFabrizio() {
-//            return fabrizio.nombre;
-//        }
-
-        console.log(fabrizio.getNombre());
-        console.log(fabrizio.getApellido());
-        fabrizio.setApellido('Ramires');
-        console.log(fabrizio.getApellido());
+        //        console.log(fabrizio.getNombre());
+        //        console.log(fabrizio.getApellido());
+        //        fabrizio.setApellido('Ramires');
+        //        console.log(fabrizio.getApellido());
 
         //        Este es un ejemplo comparativo con xml
         //    <fabrizio>
@@ -145,6 +145,20 @@
         //    <apellido>Ramirez</apellido>
         //    <edad>21</edad>
         //    </fabrizio>
+
+        var count = 10;
+        console.log('Empieza');
+        while (count > 0){
+            
+            if (count%2==0){
+                console.log('El numero 'count' es par');           
+            }else{
+                console.log('El numero 'count' es impar');           
+            }
+            count--;
+        }        
+        console.log('Se acaba');
+            
     </script>
 
 
