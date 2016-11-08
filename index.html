@@ -248,16 +248,16 @@
 
             console.log('There will be ' + numSheep * 4 + ' sheep after ' + monthNumber + ' month(s)');
             numSheep = numSheep * 4;
-        
-        if (monthNumber % 4 == 0) {
-            numSheep = numSheep * 0.25,
-                console.log('Ovejas - 75% : ' + numSheep);
-        } else {
-            if (numSheep > 10000) {
-                numSheep = numSheep / 2;
-                console.log('Ovejas / 2: ' + numSheep);
+            if (monthNumber % 4 == 0) {
+                console.log('Ovejas - 75% : ' + numSheep*0.75);
+                numSheep = numSheep * 0.25;
+            } else {
+                if (numSheep > 10000) {
+                    console.log('Ovejas / 2: ' + numSheep/2);
+                    numSheep = numSheep / 2;
+                }
             }
-        }
+
         }
     </script>
 
