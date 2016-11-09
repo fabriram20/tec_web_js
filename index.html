@@ -331,23 +331,19 @@
         
         // Iteration over Array Contents
         
-        var array=[1, 2.5, 'Holoo', true, "52", false, 52, "yaa", 2.3]
-        function numString(array){
-            
-            var num = 0;
-            
-            for(var i=0; i<=array.length; i++){
-                if(typeof array[i] == 'String'){
-                    num++;
-                }
-            }
-
-            return num;
-        }
+ var arreglo = [1,'2',3,'4',5,'seis'];
         
-                
-                console.log(numString(array));
-                
+function calcularString(arreglo){
+    var numeroStringsEnArreglo = 0;
+    for(var i=0;i<arreglo.length;i++){
+        if(typeof arreglo[i]=='string'){
+            numeroStringsEnArreglo++;
+        }
+    }
+    return numeroStringsEnArreglo;
+}
+        
+console.log(calcularString(arreglo)); 
         
     </script>
 
