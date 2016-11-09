@@ -407,39 +407,67 @@
         //        console.log(puzzlers[2](7))
         //        console.log(puzzlers[3](7))
 
-        // Ejercio Choose ther own Adventure
-
-
-        var userChoice = prompt("Select a numbre from 1 to 3");
-        userChoice = parseInt(userChoice);
-
-        function adventureSelector(userChoice) {
-            if (userChoice == 1) {
-                return function () {
-                    alert("You selected the vines of Doom !");
-                }
-
-            } else {
-                if (userChoice == 2) {
-                    return function () {
-                        alert("Looks like you want to Lake of Despair!");
-                    }
-                } else {
-                    if (userChoice == 3) {
-                        return function () {
-                            alert("The Caves of Catastrophe!");
-                        }
-                    } else {
-                        console.log("Bad choice!!")
-                    }
-                }
-            }
-        }
+//        // Ejercio Choose ther own Adventure
+//
+//
+//        var userChoice = prompt("Select a numbre from 1 to 3");
+//        userChoice = parseInt(userChoice);
+//
+//        function adventureSelector(userChoice) {
+//            if (userChoice == 1) {
+//                return function () {
+//                    alert("You selected the vines of Doom !");
+//                }
+//
+//            } else {
+//                if (userChoice == 2) {
+//                    return function () {
+//                        alert("Looks like you want to Lake of Despair!");
+//                    }
+//                } else {
+//                    if (userChoice == 3) {
+//                        return function () {
+//                            alert("The Caves of Catastrophe!");
+//                        }
+//                    } else {
+//                        console.log("Bad choice!!")
+//                    }
+//                }
+//            }
+//        }
+//        
+////        Imprime la funcion
+////        console.log(adventureSelector(userChoice));
+////        Ejecuta la funcion
+//        console.log(adventureSelector(userChoice)());
         
-//        Imprime la funcion
-//        console.log(adventureSelector(userChoice));
-//        Ejecuta la funcion
-        console.log(adventureSelector(userChoice)());
+        
+        // Queue Builder
+        var start = 2;
+        var queue = [function(input){
+                    return 8 * input - 10
+                }, function(input){
+                    return (input - 3) * (input - 3)  * (input - 3)
+                }, function(input){
+                    return input * input + 4
+                }, function(input){
+                    return input % 5
+                }]
+        
+        var applyAndEmpty = function(input, queue){
+            var long = queue.length
+            for(var i=0; i<long; i++){
+                input = queue[0](input);
+                queue.splice(0, 1);
+                console.log (input);
+            }    
+            
+            return input;
+        }
+        console.log(queue);
+        console.log(applyAndEmpty(start, queue));
+        
+        
         
         
         
