@@ -384,27 +384,65 @@
         //            //console.log("Yo, "+modifiedNames);            
         //            alert("Yo, "+modifiedNames+"¡")
         //        });
+
+        ////        Funciones dentro de un arreglo
+        //        
+        //        var puzzlers = [function(input){
+        //            return (3*input-8)
+        //        }, function(input){
+        //            return (Math.pow((input+2),3))
+        //        }, function(input){
+        //            return (Math.pow(input,2)-9)
+        //        }, function(input){
+        //            return (input%4)
+        //        }]
+        //        
+        //        console.log(puzzlers[0](5))
+        //        console.log(puzzlers[1](5))
+        //        console.log(puzzlers[2](5))
+        //        console.log(puzzlers[3](5))
+        //        
+        //        console.log(puzzlers[0](7))
+        //        console.log(puzzlers[1](7))
+        //        console.log(puzzlers[2](7))
+        //        console.log(puzzlers[3](7))
+
+        // Ejercio Choose ther own Adventure
+
+
+        var userChoice = prompt("Select a numbre from 1 to 3");
+        userChoice = parseInt(userChoice);
+
+        function adventureSelector(userChoice) {
+            if (userChoice == 1) {
+                return function () {
+                    alert("You selected the vines of Doom !");
+                }
+
+            } else {
+                if (userChoice == 2) {
+                    return function () {
+                        alert("Looks like you want to Lake of Despair!");
+                    }
+                } else {
+                    if (userChoice == 3) {
+                        return function () {
+                            alert("The Caves of Catastrophe!");
+                        }
+                    } else {
+                        console.log("Bad choice!!")
+                    }
+                }
+            }
+        }
+        
+//        Imprime la funcion
+//        console.log(adventureSelector(userChoice));
+//        Ejecuta la funcion
+        console.log(adventureSelector(userChoice)());
         
         
-        var puzzlers = [function(input){
-            return (3*input-8)
-        }, function(input){
-            return (Math.pow((input+2),3))
-        }, function(input){
-            return (Math.pow(input,2)-9)
-        }, function(input){
-            return (input%4)
-        }]
         
-        console.log(puzzlers[0](5))
-        console.log(puzzlers[1](5))
-        console.log(puzzlers[2](5))
-        console.log(puzzlers[3](5))
-        
-        console.log(puzzlers[0](7))
-        console.log(puzzlers[1](7))
-        console.log(puzzlers[2](7))
-        console.log(puzzlers[3](7))
     </script>
 
 
