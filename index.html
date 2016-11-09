@@ -361,7 +361,7 @@
         //        nombreFuncion();
         //        
 
-        //        // Funcion MAP (parecido al For each)
+        //        // Funcion MAP
         //        
         //        var passengers = [ ["Thomas", "Meeks"],
         //                          ["Gregg", "Pollack"],
@@ -376,14 +376,35 @@
         //        
         //        console.log(modifiedNames);
 
-        //
+        //  Funcion MAP empleado como un For each
 
-        var modifiedNames = ["Thomas Meeks", "Gregg Pollack", "Christine Wong", "Dan McGaw"]
+        //        var modifiedNames = ["Thomas Meeks", "Gregg Pollack", "Christine Wong", "Dan McGaw"]
+        //        
+        //        modifiedNames.map(function(modifiedNames){            
+        //            //console.log("Yo, "+modifiedNames);            
+        //            alert("Yo, "+modifiedNames+"¡")
+        //        });
         
-        modifiedNames.map(function(modifiedNames){            
-            console.log(modifiedNames[0]);            
-        })
-
+        
+        var puzzlers = [function(input){
+            return (3*input-8)
+        }, function(input){
+            return (Math.pow((input+2),3))
+        }, function(input){
+            return (Math.pow(input,2)-9)
+        }, function(input){
+            return (input%4)
+        }]
+        
+        console.log(puzzlers[0](5))
+        console.log(puzzlers[1](5))
+        console.log(puzzlers[2](5))
+        console.log(puzzlers[3](5))
+        
+        console.log(puzzlers[0](7))
+        console.log(puzzlers[1](7))
+        console.log(puzzlers[2](7))
+        console.log(puzzlers[3](7))
     </script>
 
 
