@@ -1,80 +1,78 @@
-# Repositorio
+Crear nueva carpeta "NodeJS" aqui abrimos una consola y escribimos 
 
-Este repositorio forma parte del curso de [Tecnologias WEB](https://github.com/adrianeguez/Tec_Web_Js_2016_B)
+>node
 
-# tec_web_js
-Curso de Tecnología Web JavaScript
-
-## Enfasis de texto
-
-* Para nosotros utilizar un texto en **Negrita** se utilizan dos "**".
-* Para nosotros utilizar un texto en *cursiva* se utiliza un "*".
-* Para nosotros ~~tachar un texto~~ se utiliza "~~".
-
-## Listas Ordenadas
-1. el numero 
-2. de las listas
-  * lista no ordenada 1
-  * lista no ordenada 2
-    * asdf
-2. (aqui surgio otra)
-1. ordenadas
-  1. Esta si es una lista ordenada
-  2. Esta tambien
-4. no importa
-
-## Links
-
-para utilizar un [link](https://github.com/adrianeguez/Tec_Web_Js_2016_B) debemos encerrar el texto en brackets [] seguido del URLen parentesis ().
-
-## Imagenes
-
-Para nosotros poder utilizar imagenes debemos escribir en corchetes "[]" el nombre de la imagen y acontinuacion entre paresentesis"()" la URL de la imagen.
+Node es un compiladore de Javascript
 
 
-![DOGE](https://upload.wikimedia.org/wikipedia/commons/5/58/Shiba_inu_taiki.jpg "Logo Title Text 5")
+Se crea el archivo app.js en la carpeta node: se escriben unas lineas de codigo y finalmente se compila en la consola node
 
-## Codigo
+Npm -init
 
-
-Para nosotros utilziar el formateo del codigo dentro del texto plano debemos de utilziar el caracter tilde invertida "` `".
-
-Inline `code` has `back-ticks around` it.
-
-Para utilizar el formateo de codigo en un bloque de codigo necesitamos utilizar tres tildes invertidas donde se puede especificar el lenguaje de programacion a usarse para el formateo de codigo, justo despues de las tres tildes invertidas
-
-```javascript
-var mensaje= "Hola mundo";
-```
-
-*****
-
-## Bloques (Citas no de humanos sino de texto)
+este comando crea un paquete, donde se solicitan mucha informacion para crear un archivo . json
 
 
-> Para crear Bloques se emplea el caracter ">"
+Se debe crear una cuenta en npm
 
 
-> Yo solo se que nada se.
+revisar esta pagina
+https://docs.npmjs.com/getting-started/publishing-npm-packages
+introducion tema 12 publicshin
+
+ nos logeamos
+ con npm login
+ 
+ 
+ luego publicamos nuestro paquete con 
+ npm publish
+ 
+ 
+ luego creamos una carpeta nodejs2
+ con la consola nos dirigimos a esta carpeta y dentro de ella instalamos el paquete
+ 
+ npm i tecnologiaswebrfabrizio
+ 
+ ahora inspecionamos la carpeta NojeJS2
+ 
+ Realizamos modificaciones en el archivp app.js de nodejs , aqui cambiaremos la app , luego publicamos la nueva version, es necesario cambiar la version en el archivo jsoon
+ 
+ En la carpeta NodeJS2 volvemos a instalar el paquete con al nueva version
+ 
+ 
+
+######################
+File system: paquete nativo de node.
+Myysql Conectar base de datos: https://github.com/mysqljs/mysql#install
+Xpress httpserver(peticiones y archivos estaticos): http://expressjs.com/
+Correos electronico: https://nodemailer.com/
 
 
-> Un filosofo random.
 
 
-## Tablas
-
-Para usar tablas necesitamos definir filas con "|"
-
-|Columna 1|Columna 2|Columna 3|Columna 4|
-| --- | --- | --- | --- |
-| valor 1 | valor 2 | valor  3| valor  4|
-| valor 1 | valor 2 | valor  3| valor  4|
-| valor 1 | valor 2 | valor  3| valor  4|
-| valor 1 | valor 2 | valor  3| valor  4|
 
 
-## Youtube videos
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=TtSWo2nbzAk
-" target="_blank"><img src="http://img.youtube.com/vi/TtSWo2nbzAk/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
