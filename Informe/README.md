@@ -38,6 +38,18 @@ introducion tema 12 publicshin
  
  En la carpeta NodeJS2 volvemos a instalar el paquete con al nueva version
  
+ Ahora desistalamos el paquete par esto usamos el comado
+ 
+ npm uninstall tecnologiaswebrfabrizio
+ 
+ Ahroa lo volvemos a instalarlo en de forma global con el comando
+ 
+ > npm i -g tecnologiaswebrfabrizio
+ 
+ En este caso se instalo en C:\Users\USRGAM\AppData\Roaming\npm\node_modules\tecnologiaswebrfabrizio
+ porque se hizo de forma global
+ 
+ 
  
 
 ######################
