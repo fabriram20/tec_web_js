@@ -5,6 +5,10 @@ app.get('/', function (req, res) {
   res.send('Hello World! con java script')
 })
 
-app.listen(666, function () {
-  console.log('Example app listening on port 3000!')
+app.post('/', function (req, res) {
+  res.send('POSTTT HEREEEEEE!!!!!!!!!!')
+})
+
+app.listen(5050, function () {
+  console.log('Example app listening on port 5050!')
 })
