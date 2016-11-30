@@ -6,17 +6,17 @@ var puerto=5050;
 var usuarios = [
     {
         id:1,
-        nombre:'Pepe',
+        nombre:'Pepelucho',
         cedula:'123409182'
     },
     {
         id:2,
-        nombre:'Carlos',
+        nombre:'Pancho',
         cedula:'981237918'
     },
     {
         id:3,
-        nombre:'Juan',
+        nombre:'Chio',
         cedula:'011283934'
     }
 ]
@@ -46,15 +46,26 @@ usuario.casado = false;
 //  res.send('Hello World! con java script');
 //})
 
-//Get con parametros
+//Get para responder todos los usuarios
+app.get('/Usuario', function (req, res) {
+
+    res.json(usuarios);
+    
+})
+
+//Get para responder un usuario con parametros, los : significa que se va a ingresar un parametro
 app.get('/Usuario/:idUsuario', function (req, res) {
     
     var idActual = req.params.idUsuario;
     for(var i=0;i<usuarios.length;i++){
         if(idActual == usuarios[i].id){
+            
+            //si lo encuentra
             res.json(usuarios[i]);
         }
     }
+    
+    //si no lo encuentra
     res.send('No existe el Usuario');
     
 })
