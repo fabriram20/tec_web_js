@@ -10,6 +10,10 @@ app.post('/', function (req, res) {
   res.send('POSTTT HEREEEEEE!!!!!!!!!!')
 })
 
+app.put('/', function (req, res) {
+  res.send('PuuuuuTTT HEREEEEEE!!!!!!!!!!')
+})
+
 app.listen(puerto, function () {
   console.log('Example app listening on port '+puerto+'!')
 })
