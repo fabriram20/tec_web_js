@@ -39,5 +39,20 @@ sen.json(usuario)
 
 
 * ahora vamos agergar una nueva propiedad ala cabecera del metodo post y revisamos que funciono con postman
+res.append('toke','1234')
+
+
+*ahora enviamos parametros
+
+enviar esto para recibir parametros usando postman o por la misma pagina web
+http://localhost:5050/Usuario/2
+
+tambien podemos consultar todos los usarios con el url
+http://localhost:5050/Usuario
+
+
+
+
+
 
 
