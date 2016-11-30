@@ -13,3 +13,14 @@ se instala npm con
 
 > $ npm install express
 
+
+
+
+luego de terminar el tutorial instalacion y hola mundo 
+
+agregamos respuestas para el metodo post y put
+
+Verificamos que los metodos funcionan para ello utilizamos postman para enviar peticiones tanto post como put, se despliega lo que se programo
+
+
+luego agregamos codigo en el metodo post para poder visualizar por consola la informacion de las cabeceras
