@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var puerto = 5050;
-
+var contador = 3;
 //estos son nuestros usuario que se  utilizaran para la entraga de parametros
 var usuarios = [
     {
@@ -98,32 +98,48 @@ app.get('/Usuario/:idUsuario', function (req, res) {
 
 
 app.post('/Usuario', function (req, res) {
-
-
+    
+    
     console.log(req.query.nombre);
+    
     console.log(req.query.cedula);
-
-    if (!req.query.nombre){
+    
+    if(!req.query.nombre){
         res.send('No envio el nombre');
     }
-    if (!req.query.cedula){
-        res.send('No envio la cedula')
-        
+    
+    if(!req.query.cedula){
+        res.send('No envio la cedula');
     }
+    
+    var nuevoUsuario = {
+        id:contador+1,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario);
+    contador++;
+    res.json(nuevoUsuario)
 
-    //Deprecated    
-
-    res.json(usuario);
-
-
+//    //Deprecated
+//    console.log(req.param('nombre'));
+//    
+//    //Busca el parametro nombre
+//    console.log(req.query.nombre);
+//    
+//    //Parametros URL
+//    //console.log(req.params);
+//
+//    res.json(usuarios);
+    
 })
 
 
-app.put('/tec_web_js', function (req, res) {
-
-    res.send('PuuuuuTTT HEREEEEEE!!!!!!!!!!')
-
-})
+//app.put('/tec_web_js', function (req, res) {
+//
+//    res.send('PuuuuuTTT HEREEEEEE!!!!!!!!!!')
+//
+//})
 
 app.listen(puerto, function () {
     console.log('Example app listening on port ' + puerto + '!')

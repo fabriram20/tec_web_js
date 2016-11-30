@@ -52,6 +52,10 @@ http://localhost:5050/Usuario
 
 
 
+al final ingresamos nuevo susarios enviando nombre y cedula con postman, y luego listamos
+
+
+
 
 
 
