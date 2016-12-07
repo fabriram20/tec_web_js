@@ -10,7 +10,7 @@ var contador = 3;
 //
 //}
 
-fs.readfile('./paginas/pagina.html', 'utf8', function (error, archivoleido)) {
+fs.readfile('./paginas/pagina.html', 'utf8', (function (error, archivoleido))) {
 
 console.log(error);
 console.log(archivoleido);
