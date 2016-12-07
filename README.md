@@ -1,6 +1,6 @@
-# SEGUNDA PARTE CLASE NODE JS
+# TERCERA PARTE CLASE NODE JS
 
-# fecha 30/11/2016
+# fecha 07/12/2016
 
 
 En esta clase instalaremos un servidor http dinamico con express para esto nos dirigimos al siguietne enlace y seguimos los pasos:
@@ -16,6 +16,9 @@ se instala npm con
 > $ npm install express
 
 
+* para correr el programa usamos
+
+> $ node app.js
 
 
 * luego de terminar el tutorial instalacion y hola mundo 
