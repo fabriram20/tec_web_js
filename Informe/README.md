@@ -1,4 +1,4 @@
-# NPM "Node Package Manager?"
+# NPM "Node Package Manager"
 
 ### Materia : `Tecnologías Web con JavaScript`
 ### Tema : `Javascript` 
@@ -60,56 +60,63 @@ El tema de la práctica es: `NPM`.
 
 ## Desarrollo del informe
 
-Crear nueva carpeta "NodeJS" aqui abrimos una consola y escribimos 
+* Se crea una nueva carpeta titulada "NodeJS" aqui abrimos una consola e iniciaremos nodeJs (Node es un compiladore de Javascript) con el siguiente comando: 
 
 >node
 
-Node es un compiladore de Javascript
+* Se crea el archivo app.js en la carpeta node: se escriben unas lineas de codigo y finalmente se compila en la consola con el comando:
+
+>node app.js
+
+### Creación de un paquete
+
+* Primero debemos crear una cuenta en npm, para ello ingresamos a la pagina web de [NPM](https://www.npmjs.com/signup).
+
+* Ahora vamos a crear un nuevo paquete para ello utilizaremos el siguiente comando en el prompt que se inicio antes:
+
+>Npm -init
+
+* Aqui se solicitaran varios campos de informacion para crear un archivo JASON(.json) cuando se finaliza este registro se creara el archivo con el siguiente contenido:
 
 
-Se crea el archivo app.js en la carpeta node: se escriben unas lineas de codigo y finalmente se compila en la consola node
+### Publicación de una Paquete
 
-Npm -init
-
-este comando crea un paquete, donde se solicitan mucha informacion para crear un archivo . json
+* Para realizar este proceso se empleo la guia "Introdución Tema 12 publishing NPM packages" que nos ofrece NPM en su pagina web, la cual es accesible desde el siguiente link: [https://docs.npmjs.com/getting-started/publishing-npm-packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)
 
 
-Se debe crear una cuenta en npm
+* Debemos logearnos con el comando:
+> npm login
+ 
+ 
+* Luego debemos publicar nuestro paquete con el siguiente comando: 
+ > npm publish
+ 
 
+### Instalación del Paquete
 
-revisar esta pagina
-https://docs.npmjs.com/getting-started/publishing-npm-packages
-introducion tema 12 publicshin
+* Se crear una nueva carpeta titulada nodejs2, con la consola nos dirigimos a esta carpeta y dentro de ella instalamos el paquete que creamos anteriormente, con el comando:
+ > npm i tecnologiaswebrfabrizio
+ 
+* Ahora inspecionamos la carpeta "NodeJS2":
 
- nos logeamos
- con npm login
+### Generar nueva versión del paquete
+
+* Realizamos modificaciones en el archivp app.js de la carpeta "nodejs", aqui cambiaremos el programa, luego publicamos la nueva version, es necesario cambiar la version en el archivo Package.json:
  
  
- luego publicamos nuestro paquete con 
- npm publish
+* En la carpeta NodeJS2 volvemos a instalar el paquete con al nueva versión:
+
+### Desinstalar un paquete
  
+* Para desinstalar un paquete usamos el comado:
+> npm uninstall tecnologiaswebrfabrizio
  
- luego creamos una carpeta nodejs2
- con la consola nos dirigimos a esta carpeta y dentro de ella instalamos el paquete
+* Ahora lo volvemos a instalar pero de forma global con el comando (-g = global):
+> npm i -g tecnologiaswebrfabrizio
  
- npm i tecnologiaswebrfabrizio
+* Cuando se instalan los paquetes de forma global, generalmente se guardan en la siguiente dirección de la PC C:\Users\USRGAM\AppData\Roaming\npm\node_modules\tecnologiaswebrfabrizio.
  
- ahora inspecionamos la carpeta NojeJS2
- 
- Realizamos modificaciones en el archivp app.js de nodejs , aqui cambiaremos la app , luego publicamos la nueva version, es necesario cambiar la version en el archivo jsoon
- 
- En la carpeta NodeJS2 volvemos a instalar el paquete con al nueva version
- 
- Ahora desistalamos el paquete par esto usamos el comado
- 
- npm uninstall tecnologiaswebrfabrizio
- 
- Ahroa lo volvemos a instalarlo en de forma global con el comando
- 
- > npm i -g tecnologiaswebrfabrizio
- 
- En este caso se instalo en C:\Users\USRGAM\AppData\Roaming\npm\node_modules\tecnologiaswebrfabrizio
- porque se hizo de forma global
+* Finalmente volvemos a ejecutar la aplicacion pero con el paquete instalado de forma global: 
  
  
  
@@ -125,30 +132,11 @@ Correos electronico: https://nodemailer.com/
 <a name="conclusiones"></a>
 ## Conclusiones y Recomendaciones
 
-
+- NPM es un gestor de paquetes que viene instalado por defecto con NodeJS
+- NodeJS es un compilador de javascript
+- Es necesario crear un cuenta en NPM para poderpublicar paquetes.
+- A veces la instalacion de paquetes de forma global causan conflicto, como en este caso particular.
+- Hay que tener en cuenta que si no se emplea el modificador -g el paquete se instalará de forma local.
 
 
 <a href="#cabecera">A la cabecera</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
