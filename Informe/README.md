@@ -64,7 +64,7 @@ El tema de la práctica es: `NPM`.
 
 >node
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/prompt%20node.png?raw=true">
 </p>
 
 * Se crea el archivo app.js en la carpeta node: se escriben unas lineas de codigo y finalmente se compila en la consola con el comando:
@@ -72,7 +72,7 @@ El tema de la práctica es: `NPM`.
 >node app.js
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/app.js%20v1.png?raw=true">
 </p>
 
 ### Creación de un paquete
@@ -80,7 +80,7 @@ El tema de la práctica es: `NPM`.
 * Primero debemos crear una cuenta en npm, para ello ingresamos a la pagina web de [NPM](https://www.npmjs.com/signup).
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/Registro%20npm.png?raw=true">
 </p>
 
 * Ahora vamos a crear un nuevo paquete para ello utilizaremos el siguiente comando en el prompt que se inicio antes:
@@ -90,15 +90,15 @@ El tema de la práctica es: `NPM`.
 * Aqui se solicitaran varios campos de informacion para crear un archivo JASON(.json) cuando se finaliza este registro se creara el archivo con el siguiente contenido:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/package%20json%201.png?raw=true">
 </p>
 
-### Publicación de una Paquete
+### Publicación de un Paquete
 
-* Para realizar este proceso se empleo la guia "Introdución Tema 12 publishing NPM packages" que nos ofrece NPM en su pagina web, la cual es accesible desde el siguiente link: [https://docs.npmjs.com/getting-started/publishing-npm-packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+* Para realizar este proceso se empleó la guia "Introdución Tema 12 publishing NPM packages" que nos ofrece NPM en su pagina web, la cual es accesible desde el siguiente link: [https://docs.npmjs.com/getting-started/publishing-npm-packages](https://docs.npmjs.com/getting-started/publishing-npm-packages)
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/Guia%20Tema%2012.png?raw=true">
 </p>
 
 * Debemos logearnos con el comando:
@@ -110,7 +110,7 @@ El tema de la práctica es: `NPM`.
 * A continuación se muestra el paquete publicado en la pagina web:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/Paquete%20publicado%20en%20NPM.png?raw=true">
 </p>
  
 ### Instalación del Paquete
@@ -121,7 +121,7 @@ El tema de la práctica es: `NPM`.
 * Ahora inspecionamos la carpeta "NodeJS2":
 
 <p align="center">
-<img src="">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/CarpetaNodeJS2.png?raw=true">
 </p>
 
 ### Generar nueva versión del paquete
@@ -134,6 +134,19 @@ El tema de la práctica es: `NPM`.
  
 * En la carpeta NodeJS2 volvemos a instalar el paquete con al nueva versión:
 > npm i tecnologiaswebrfabrizio
+
+* Creamos un archivo app.js dentro de la carpeta NODEJS2 con  el siguiente contenido:
+
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/Aplicacion%20Principal.png?raw=true">
+</p> 
+
+* Ejecutamos el programa con el comando:
+> node app.js
+
+<p align="center">
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/Ejecucion%20Programa.png?raw=true">
+</p> 
 
 ### Desinstalar un paquete
  
@@ -148,9 +161,8 @@ El tema de la práctica es: `NPM`.
 * Finalmente volvemos a ejecutar la aplicacion pero con el paquete instalado de forma global: 
  
 <p align="center">
-<img src="">
-</p>
- 
+<img src="https://github.com/fabriram20/tec_web_js/blob/07-nodeJS/Informe/Graficos/Ejecucion%20Programa.png?raw=true">
+</p> 
 
 ######################
 File system: paquete nativo de node.
