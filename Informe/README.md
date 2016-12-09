@@ -1,3 +1,65 @@
+# NPM "Node Package Manager?"
+
+### Materia : `Tecnologías Web con JavaScript`
+### Tema : `Javascript` 
+### Fecha : `2016-11-23`
+### Estudiante : `Fabrizio Eloy Ramirez Cutimbo`
+### Profesor : `Tania Calle - Adrian Eguez`
+### Número de informe : ``
+
+<a name="cabecera"></a>
+
+## Índice de contenidos
+
+- <a href="#tema">Tema</a>
+- <a href="#objetivos">Objetivos</a>
+- <a href="#marco-teorico">Marco Teorico</a>
+    *  <a href="#nodejs">NODEJS</a>
+    *  <a href="#npm">NPM</a>    
+- <a href="#desarrollo">Desarrollo de la Práctica</a>    
+- <a href="#conrec">Conclusiones y Recomendaciones</a> 
+
+<a name="tema"></a>
+
+## Tema
+
+El tema de la práctica es: `NPM`.
+
+<a href="#cabecera">A la cabecera</a>
+<a name="objetivos"></a>
+## Objetivos
+
+- Instalar y utilizar NPM
+- Instalar y utilizar Node JS
+
+<a href="#cabecera">A la cabecera</a>
+<a name="marco-teorico"></a>
+
+## Marco Teorico
+
+<a name="nodejs"></a>
+### NODEJS
+
+<p align="center">
+<img src="http://www.miraclegroup.com/wp-content/uploads/2016/08/node-js-development-Brillmindz.jpg" width="450" height="250">
+</p>
+
+<a href="#cabecera">A la cabecera</a>
+<a name="npm"></a>
+### NPM
+
+
+
+<p align="center">
+<img src="http://i0.wp.com/qnimate.com/wp-content/uploads/2014/11/npm.jpg?fit=1030%2C9999" width="400" height="250">
+</p>
+
+
+<a href="#cabecera">A la cabecera</a>
+<a name="desarrollo"></a>
+
+## Desarrollo del informe
+
 Crear nueva carpeta "NodeJS" aqui abrimos una consola y escribimos 
 
 >node
@@ -59,12 +121,14 @@ Xpress httpserver(peticiones y archivos estaticos): http://expressjs.com/
 Correos electronico: https://nodemailer.com/
 
 
+<a href="#cabecera">A la cabecera</a>
+<a name="conclusiones"></a>
+## Conclusiones y Recomendaciones
 
 
 
 
-
-
+<a href="#cabecera">A la cabecera</a>
 
 
 
