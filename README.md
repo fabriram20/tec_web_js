@@ -39,6 +39,8 @@ El servidor web de sails se encuentra localizado en la carpeta **assets**
 
 
 
+Revisar el "grunt"
+
 
 
 
