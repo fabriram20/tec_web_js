@@ -1,61 +1,41 @@
-# TERCERA PARTE CLASE NODE JS
+## Comandos Importantes
 
-# fecha 07/12/2016
+### Instalar sailsjs
 
+Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
 
-En esta clase instalaremos un servidor http dinamico con express para esto nos dirigimos al siguietne enlace y seguimos los pasos:
+´´´
+> npm install -g sails
+´´´
 
-[http://expressjs.com/en/starter/installing.html](http://expressjs.com/en/starter/installing.html)
+El -g nos deja utilizarlo globalmente.
 
-Seguimos este tutorial
+### Crear un proyecto en Sailsjs
 
-se instala npm con 
+´´´
+> sails new NombreProyecto
+´´´
 
-> $ npm install express --save
+### Levantar el servidor
 
-> $ npm install express
-
-
-* para correr el programa usamos
-
-> $ node app.js
-
-
-* luego de terminar el tutorial instalacion y hola mundo 
-
-* agregamos respuestas para el metodo post y put
-
-* Verificamos que los metodos funcionan para ello utilizamos postman para enviar peticiones tanto post como put, se despliega lo que se programo
+´´´
+> sails lift
+´´´
 
 
-* luego agregamos codigo en el metodo post para poder visualizar por consola la informacion de las cabeceras
+´´´
+> node app.js
+´´´
 
-* intentamos poner una segunda respuesta, el navegador nos dice q es imposible, nos da un error probar:
+El sails les pide opciones si no estan definidas, las opciones son:
 
+- 1: SAFE MODE no se va a alterar la base de datos
+- 2: ALTER MODE se va a alterar la base de datos si nosotros hicimos cambios en los modelos por ejemplo
+- 3: DELETE MODE borra todos los datos de la base y vuelve a crear los modelos
 
-* ahora cambios las respuesta que enviamos, usaremos json para esto
+## Servidor Web de Sailsjs
 
-sen.json(usuario)
-
-
-* Como se observo antes las cabeceras esta indefinidas
-
-
-* ahora vamos agergar una nueva propiedad ala cabecera del metodo post y revisamos que funciono con postman
-res.append('toke','1234')
-
-
-*ahora enviamos parametros
-
-enviar esto para recibir parametros usando postman o por la misma pagina web
-http://localhost:5050/Usuario/2
-
-tambien podemos consultar todos los usarios con el url
-http://localhost:5050/Usuario
-
-
-
-al final ingresamos nuevo susarios enviando nombre y cedula con postman, y luego listamos
+El servidor web de sails se encuentra localizado en la carpeta **assets**
 
 
 
