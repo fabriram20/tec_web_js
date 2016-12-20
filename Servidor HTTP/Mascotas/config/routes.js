@@ -35,11 +35,11 @@ module.exports.routes = {
     '/': {
         view: 'homepage'
     },
-    '/Quito': 'Quito',
+    '/Quito':{ view: 'Quito'},
     
-    '/Guayaquil': 'Guayaquil',
+    '/Guayaquil':{ view: 'Guayaquil'},
     
-    '/Cuenca': 'Cuenca'
+    '/Cuenca':{ view: 'Cuenca'}
     
 
 
