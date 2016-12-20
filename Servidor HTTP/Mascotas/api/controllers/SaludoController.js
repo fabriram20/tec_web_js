@@ -23,7 +23,7 @@ module.exports = {
     }else{
         res.json({
             nombre: 'Hola todos'
-        })
+        });
     }
         
     },

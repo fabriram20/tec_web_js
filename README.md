@@ -48,4 +48,6 @@ Revisar el "grunt" e instalar
 '''
 
 
+sailsjs req params buscar en google
 
+Deber escribir un controlladore llamado correo que contenga un metodo llamado enviar  el metodo evniar acepta parametro
