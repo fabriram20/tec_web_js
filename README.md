@@ -39,9 +39,13 @@ El servidor web de sails se encuentra localizado en la carpeta **assets**
 
 
 
-Revisar el "grunt"
+Revisar el "grunt" e instalar
 
 
+## Generar controladores en sailsjs
+'''
+>sails generate controller NombreControlador
+'''
 
 
 
