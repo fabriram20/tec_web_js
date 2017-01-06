@@ -73,6 +73,53 @@ Fuente[Sailsjs.com](http://sailsjs.com/whats-that)
 <br>
 
 <a name=""></a>
+### Assets
+
+Los activos se refieren a archivos estáticos (js, css, imágenes, etc) en el servidor que desea mostrar al mundo exterior. En Sails, estos archivos se colocan en la carpeta Assets/. Cuando levante su aplicación, se puede agregar archivos a la carpeta assets/, o cambiar los assets existentes. Sails procesos y sincroniza esos archivos en una carpeta oculta (.tmp / public /).
+
+Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/assets)
+
+<a href="#cabecera">A la cabecera</a>
+
+<br>
+
+<a name=""></a>
+### Views
+
+En Sails, las vistas son plantillas markup que se compilan en el servidor en páginas HTML. En la mayoría de los casos, las vistas se utilizan como respuesta a una solicitud HTTP entrante, por ejemplo para servir la página de inicio.
+
+Alternativamente, una vista puede ser compilada directamente en una cadena HTML para usarla en el código del backend. Por ejemplo, puede usar este enfoque para enviar correos electrónicos HTML o para construir grandes cadenas XML para usar con un API heredada.
+
+Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
+
+
+<a href="#cabecera">A la cabecera</a>
+
+<br>
+
+<a name=""></a>
+### Pipeline
+
+El archivo pipeline.js en la aplicación Sails determina el orden en que sus hojas de estilo(css), JavaScript y los archivos de plantilla del lado del cliente deben ser compilados y enlazados como etiquetas `script` o `link`.
+
+Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
+
+<a href="#cabecera">A la cabecera</a>
+<br>
+
+<a name=""></a>
+### Controllers
+
+Este es el directorio que contiene sus controladores. En Sails, los controladores son archivos javascript que contienen lógica para interactuar con los modelos y renderizar vistas apropiadas para el cliente.
+
+Cuando se llama a sails se genera un API a través de la línea de comandos desde dentro del directorio raíz de su proyecto, Sails generará el archivo api / controllers / CatsController.js junto con un modelo de emparejamiento.
+
+Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
+
+<a href="#cabecera">A la cabecera</a>
+<br>
+
+<a name=""></a>
 ## Comandos Importantes
 
 ### Instalar sailsjs
