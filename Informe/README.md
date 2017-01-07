@@ -64,10 +64,6 @@ Fuente[Sailsjs.com](http://sailsjs.com/whats-that)
 
 <a name=""></a>
 
-<p align="center">
-<img src="">
-</p>
-
 <a href="#cabecera">A la cabecera</a>
 
 <br>
@@ -119,57 +115,216 @@ Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
 <a href="#cabecera">A la cabecera</a>
 <br>
 
-<a name=""></a>
-## Comandos Importantes
+<a name="desarrollo"></a>
+## Desarrollo de la Práctica
 
-### Instalar sailsjs
+* Instalar Sails.j utilizando el gestor de paquetes mpn para ello ejecutamos el siguiente comando:
 
-Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
-
-´´´
 > npm install -g sails
-´´´
 
-El -g nos deja utilizarlo globalmente.
+<p align="center">
+<img src="">
+</p>
 
-### Crear un proyecto en Sailsjs
+* Se debe abrir una consola de comando en la carpeta donde crearemos un nuevo proyecto con sails, para ellos emplearemos el comando (el titulo del proyecto sera "Proyecto"):
 
-´´´
 > sails new NombreProyecto
-´´´
 
-### Levantar el servidor
+<p align="center">
+<img src="">
+</p>
 
-´´´
+* Cuando sails crea el proyecto generara automaticamente los siguientes archivos, los cuales nos permitiran configurar el servidor web:
+
+<p align="center">
+<img src="">
+</p>
+
+* Para levantar el servidor web debemos ubicarnos en la carpeta donde se creó el proyecto y ejecutaremos el siguiente comando:
+
 > sails lift
-´´´
 
+<p align="center">
+<img src="">
+</p>
 
-´´´
-> node app.js
-´´´
+* Como se pudo observar en la imagen anterior sails levante el servidor web automaticamente en el puerto 1337 por ello para acceder a la pagina web lo haremos a traves de un navegador ingresando la URL http://localhost:1337 :
 
-El sails les pide opciones si no estan definidas, las opciones son:
+<p align="center">
+<img src="">
+</p>
 
-- 1: SAFE MODE no se va a alterar la base de datos
-- 2: ALTER MODE se va a alterar la base de datos si nosotros hicimos cambios en los modelos por ejemplo
-- 3: DELETE MODE borra todos los datos de la base y vuelve a crear los modelos
+### Assets
 
-## Servidor Web de Sailsjs
+* Dentro de la carpeta Proyecto/assets creamos una nueva otra carpeta titulada App, ademas crearemos los siguientes archivos dentro de esta misma:
+- index.html
+- estilos.css
+- app.js
 
-El servidor web de sails se encuentra localizado en la carpeta **assets**
+<p align="center">
+<img src="">
+</p>
 
+* Los archivos que se crearon anteriormente contendran la siguiente informacion:
 
+- index.html
 
-Revisar el "grunt" e instalar
+<p align="center">
+<img src="">
+</p>
 
+- estilos.css
 
-## Generar controladores en sailsjs
-'''
->sails generate controller NombreControlador
-'''
+<p align="center">
+<img src="">
+</p>
 
+- app.js
 
-sailsjs req params buscar en google
+<p align="center">
+<img src="">
+</p>
 
-Deber escribir un controlladore llamado correo que contenga un metodo llamado enviar  el metodo evniar acepta parametro
+* Comprobaremos el correcto funcionamiento de los archivos que acabamos de crear para ello accedemos al siguiente enlace `http://localhost:1337/App/index.html`, donde observaremos el texto "Hola Mundo", el color de fondo, y el mensaje de alerta.
+
+<p align="center">
+<img src="">
+</p>
+
+* Tambien podemos crear otra carpeta dentro de App y guardar archivos para usarlos en nuestra página web. En este caso crearemos la carpeta `Fotos` donde guardaremos una imagen, a continuacion accederemos a ella usando el siguiente enlace http://localhost:1337/App/fotos/sol.jpg:
+
+<p align="center">
+<img src="">
+</p>
+
+### Pipeline
+
+* Ahora vamos a modficiar el archivo `pipeline.js` el cual se encuentra dentro de la carpeta `Tasks` este archivo entre sus muchas funciones determina que archivos css se utilizarán en el proyecto:
+
+<p align="center">
+<img src="">
+</p>
+
+Como se observa en la imagen el proyecto utilizar todos los archivs .css que se encuetran dentro de la carpeta assets/styles, por ellos modificaremos la ruta empleando el archivo "estilos.css" que creamos anteriormente:
+
+<p align="center">
+<img src="">
+</p>
+
+El resultando sera el siguiente al solicitar la pagina principal:
+
+<p align="center">
+<img src="">
+</p>
+
+### Views
+* La carpeta Vistas(`views`) se encuentra dentro del Proyecto, aqui prodremos modificar las diferentes pantallas que se mostraran al cliente, esta carpeta contiene los siguientes archivos:
+
+<p align="center">
+<img src="">
+</p>
+
+- El archivo homepage.ejs es la página de inicio de nuestro proyecto. Procederemos a modificar a modo de ejemplo:
+
+<p align="center">
+<img src="">
+</p>
+
+- Los archivos 403, 404 y 500 hacen referencia a las pantallas de error que mostrara el navegador en caso se sucitara alguno:
+
+<p align="center">
+<img src="">
+</p>
+
+* Ahora crearemos 3 nuevas vistas: Quito, Guayaquil y Cuenca, para ello simplemente debemos crear 3 archivos dentro de la carpeta `Views` y colocar un pequeño mensaje:
+
+<p align="center">
+<img src="">
+</p>
+
+* Para poder acceder a nuestras nuevas vistas primero debemos configurar el archivo
+ `config/routes.js` el cual contiene las rutas para acceder a nuestras vistas, por defecto se enceuntra de la siguiente manera:
+
+<p align="center">
+<img src="">
+</p>
+
+ Ahora debemos modificarlo para que luzca de la siguiente manera:
+
+<p align="center">
+<img src="">
+</p>
+
+ Es importante reiniciar nuestro servidor web para que hagan efecto los cambios:
+ Con esta nueva configuracion podremos acceder a nuestras vistas utilizando los siguientes URL:
+ - http://localhost:1337/Quito
+
+<p align="center">
+<img src="">
+</p>
+
+ - http://localhost:1337/Guayaquil
+
+<p align="center">
+<img src="">
+</p> 
+
+- http://localhost:1337/Cuenca
+
+<p align="center">
+<img src="">
+</p>
+
+* Tambien cambiaremos el archivo layout.ejs el cual esta encargado de construir la pagina de inicio:
+
+<p align="center">
+<img src="">
+</p>
+
+El resultado es el siguiente:
+
+<p align="center">
+<img src="">
+</p>
+
+### Controllers
+ 
+* Para a crear un controlador utilizamos el siguiente comando:
+
+> sails generate controller Nombre
+
+<p align="center">
+<img src="">
+</p>
+
+* Cuando se crea un controlador automaticamente se genera el archivo archivo SaludarController.js dentro de la carpeta /api/controllers:
+
+* Modificaremos el archivo SaludarController.js e introduciremos el siguiente código:
+
+<p align="center">
+<img src="">
+</p>
+
+* Finalmente probaremos que todas las funciones implementadas funcionan:
+
+- Metodo GET (http://localhost:1337/Saludar/hola)
+
+<p align="center">
+<img src="">
+</p>
+
+- Metodo Hora (http://localhost:1337/Saludar/hora)
+
+<p align="center">
+<img src="">
+</p>
+
+- Metodo POST (http://localhost:1337/Saludar/hola)
+
+<p align="center">
+<img src="">
+</p>
+
+## Conclusiones
+
+- Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
