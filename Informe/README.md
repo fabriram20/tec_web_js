@@ -328,9 +328,9 @@ El resultado es el siguiente:
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- Sailsjs es un servidor web que se conecta a bases de datos y puede funcionar con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
-- Cuando se crea un proyecto con sails se genera un arbol de archivos para administrar correctamente nuestra API REST
-- Sails emplea la arquitectura modelo-vista-controlador
+- Sails.js es un framework web que funciona con aplicaciones en tiempo real, ayudandonos a crear REST APIs.
+- Cuando se crea un proyecto con sails se genera un arbol de archivos para administrar correctamente nuestra API REST.
+- Sails emplea la arquitectura modelo-vista-controlador.
 - Cuando se realizan algunos cambios en el servidor es necesario detener y levanar el servicio web.
 - Sails es un framework disponible en npm.
 - Aprendimos a modificar ciertos archivos para cambiar la presentacion y funcionamiento de las paginas web.
