@@ -61,13 +61,6 @@ Fuente[Sailsjs.com](http://sailsjs.com/whats-that)
 </p>
 
 <a href="#cabecera">A la cabecera</a>
-
-<br>
-
-<a name=""></a>
-
-<a href="#cabecera">A la cabecera</a>
-
 <br>
 
 <a name="asse"></a>
@@ -90,10 +83,7 @@ Alternativamente, una vista puede ser compilada directamente en una cadena HTML 
 
 Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
 
-
 <a href="#cabecera">A la cabecera</a>
-
-<br>
 
 <a name="pipe"></a>
 ### Pipeline
@@ -103,7 +93,6 @@ El archivo pipeline.js en la aplicación Sails determina el orden en que sus hoj
 Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
 
 <a href="#cabecera">A la cabecera</a>
-<br>
 
 <a name="cont"></a>
 ### Controllers
@@ -115,7 +104,6 @@ Cuando se llama a sails se genera un API a través de la línea de comandos desd
 Fuente[Sailsjs.com](http://sailsjs.com/documentation/concepts/views)
 
 <a href="#cabecera">A la cabecera</a>
-<br>
 
 <a name="desarrollo"></a>
 ## Desarrollo de la Práctica
