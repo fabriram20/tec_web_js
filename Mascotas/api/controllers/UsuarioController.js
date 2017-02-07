@@ -18,6 +18,7 @@ module.exports = {
         console.log(parametros);
 
         if (req.method == 'POST') {
+            
             if (parametros.nombres && parametros.apellidos) {
                 //creo el usuario
                 Usuario.create({
@@ -34,7 +35,18 @@ module.exports = {
                 return res.badRequest('No envia todos los parametros');
             }
         } else {
-            return res.badRequest('Metodo invalido');
+            
+                                       
+ return res.view('vistas/error', {
+        
+        error:{
+            
+            descripcion: "Metodo invalido",
+            rawError: "Rutas equivocada",
+            url:"/Inicio"
+        }
+        })         
+
         }
 
     },
