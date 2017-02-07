@@ -15,7 +15,20 @@ module.exports = {
     },
     crearUsuario:function(req,res){
         
-        return res.view('vistas/crearUsuario')
+        return res.view('usuario/crearUsuario')
+        
+    },
+    error:function(req,res){
+        
+        return res.view('vistas/error', {
+        
+        error:{
+            
+            descripcion: "Usted esta por error en esta Ruta dirijase a Inicio",
+            rawError: "Rutas equivocada",
+            url:"/Inicio"
+        }
+        });
         
     }
     
