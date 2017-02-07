@@ -10,106 +10,67 @@
 module.exports = {
 
     crearUsuario: function (req, res) {
-        //   Se accede asi: /Usuario/crearUsuario
 
-        // Guardando todos los parametros en la variable parametros
+        if (req.method == "POST") {
 
-        var parametros = req.allParams();
-        console.log(parametros);
-
-        if (req.method == 'POST') {
+            var parametros = req.allParams();
 
             if (parametros.nombres && parametros.apellidos) {
-                //creo el usuario
-                Usuario.create({
+
+                var usuarioCrear = {
                     nombres: parametros.nombres,
                     apellidos: parametros.apellidos,
                     correo: parametros.correo
-                }).exec(function (err, usuarioCreado) {
+                }
+
+                if (usuarioCrear.correo == "") {
+                    delete usuarioCrear.correo
+                }
+
+                Usuario.create(usuarioCrear).exec(function (err, usuarioCreado) {
+
                     if (err) {
-
                         return res.view('vistas/error', {
-
-                            err: {
-
-                                descripcion: "Fallo al crear el usuario",
+                            error: {
+                                desripcion: "Fallo al crear el Usuario",
                                 rawError: err,
-                                url: "/Inicio"
+                                url: "/CrearUsuario"
                             }
-                        })
 
+                        });
                     }
-                });
+
+                    return res.view('vistas/Usuario/crearUsuario');
+
+
+                })
+
+
             } else {
 
                 return res.view('vistas/error', {
-
                     error: {
-
-                        descripcion: "No envia todos los parametros",
-                        rawError: "Rutas equivocada",
-                        url: "/Inicio"
+                        desripcion: "Llena todos los parametros, apellidos y nombres",
+                        rawError: "Fallo en envio de parametros",
+                        url: "/CrearUsuario"
                     }
-                })
 
-            }
-            
-            return res.view('/Inicio')
-            
-        } else {
-
-
-            return res.view('vistas/error', {
-
-                error: {
-
-                    descripcion: "Metodo invalido",
-                    rawError: "Rutas equivocada",
-                    url: "/Inicio"
-                }
-            })
-
-        }
-
-    },
-    crearUsuarioForm: function (req, res) {
-
-        var parametros = req.allParams();
-        console.log(parametros);
-
-        if (req.method == 'POST') {
-            if (parametros.nombres && parametros.apellidos) {
-                //creo el usuario
-                Usuario.create({
-                    nombres: parametros.nombres,
-                    apellidos: parametros.apellidos,
-                    correo: parametros.correo
-                }).exec(function (error, usuarioCreado) {
-
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
-
-                    return res.view('vistas/home', {
-                        titulo: 'Inicio',
-                        numero: 1,
-                        mauricio: {
-                            nombre: 'Mauricio',
-                            cedula: 1718137159
-                        }
-                    });
                 });
 
-
-
-
-            } else {
-                // bad Request
-                return res.badRequest('No envia todos los parametros');
             }
+
+
         } else {
-            return res.badRequest('Metodo invalido');
+
+            return res.view('vistas/error', {
+                error: {
+                    desripcion: "Error en el uso del Metodo HTTP",
+                    rawError: "HTTP Invalido",
+                    url: "/CrearUsuario"
+                }
+            });
+
         }
 
     }
-
 };
