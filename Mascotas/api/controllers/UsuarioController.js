@@ -18,34 +18,56 @@ module.exports = {
         console.log(parametros);
 
         if (req.method == 'POST') {
-            
+
             if (parametros.nombres && parametros.apellidos) {
                 //creo el usuario
                 Usuario.create({
                     nombres: parametros.nombres,
                     apellidos: parametros.apellidos,
                     correo: parametros.correo
-                }).exec(function (error, usuarioCreado) {
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
-                    return res.ok(usuarioCreado);
+                }).exec(function (err, usuarioCreado) {
+                    if (err) {
+
+                        return res.view('vistas/error', {
+
+                            err: {
+
+                                descripcion: "Fallo al crear el usuario",
+                                rawError: err,
+                                url: "/Inicio"
+                            }
+                        })
+
+                    }
                 });
             } else {
-                // bad Request
-                return res.badRequest('No envia todos los parametros');
+
+                return res.view('vistas/error', {
+
+                    error: {
+
+                        descripcion: "No envia todos los parametros",
+                        rawError: "Rutas equivocada",
+                        url: "/Inicio"
+                    }
+                })
+
             }
+            
+            return res.view('/Inicio')
+            
         } else {
-            
-                                       
- return res.view('vistas/error', {
-        
-        error:{
-            
-            descripcion: "Metodo invalido",
-            rawError: "Rutas equivocada",
-            url:"/Inicio"
-        }
-        })         
+
+
+            return res.view('vistas/error', {
+
+                error: {
+
+                    descripcion: "Metodo invalido",
+                    rawError: "Rutas equivocada",
+                    url: "/Inicio"
+                }
+            })
 
         }
 
@@ -63,6 +85,7 @@ module.exports = {
                     apellidos: parametros.apellidos,
                     correo: parametros.correo
                 }).exec(function (error, usuarioCreado) {
+
                     if (error) return res.serverError()
                     sails.log.info(usuarioCreado);
 
