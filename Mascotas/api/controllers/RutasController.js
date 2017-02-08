@@ -8,28 +8,19 @@
 module.exports = {
 
     home: function (req, res) {
-
-        // res.view(String: Nombre vista, Datos JSON)
-        return res.view('vistas/home')
-
+        return res.view('vistas/home');
     },
     crearUsuario: function (req, res) {
-
-        return res.view('usuario/crearUsuario')
-
+        return res.view('vistas/Usuario/crearUsuario');
     },
     error: function (req, res) {
-
-        return res.view('vistas/error', {
-
+        return res.view('vistas/Error', {
             error: {
-
-                descripcion: "Usted esta por error en esta Ruta dirijase a Inicio",
-                rawError: "Rutas equivocada",
+                desripcion: "Usted esta por error en esta Ruta dirijase a Inicio",
+                rawError: "Ruta equivocada",
                 url: "/Inicio"
             }
         });
-
     },
     listarUsuarios: function (req, res) {
 
@@ -46,7 +37,7 @@ module.exports = {
                     });
                 }
             
-                res.view('usuario/ListarUsuarios', {
+                res.view('vistas/Usuario/ListarUsuarios', {
                     usuarios:usuariosEncontrados
                 });
             })

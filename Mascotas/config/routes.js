@@ -37,19 +37,17 @@ module.exports.routes = {
 
     'get /CrearUsuario': 'RutasController.crearUsuario',
     'get /ListarUsuarios': 'RutasController.listarUsuarios',
-    
-    
     'get /EditarUsuario': 'RutasController.editarUsuario',
     
-
-    'get /ListarMascotas': 'RutasController.listarMascotas',
-    'get /EditarMascota': 'RutasController.editarMascota',
-    'get /CrearMascota': 'RutasController.crearMascota',
-
-    'get /ListarRazas': 'RutasController.listarRazas',
-    'get /EditarRaza': 'RutasController.editarRaza',
-    'get /CrearRaza': 'RutasController.crearRaza',
-    'get /Error': 'RutasController.error'
+//
+//    'get /ListarMascotas': 'RutasController.listarMascotas',
+//    'get /EditarMascota': 'RutasController.editarMascota',
+//    'get /CrearMascota': 'RutasController.crearMascota',
+//
+//    'get /ListarRazas': 'RutasController.listarRazas',
+//    'get /EditarRaza': 'RutasController.editarRaza',
+//    'get /CrearRaza': 'RutasController.crearRaza',
+//    'get /Error': 'RutasController.error'
 
 
 
