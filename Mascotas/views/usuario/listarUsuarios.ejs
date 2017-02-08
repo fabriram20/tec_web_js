@@ -1,32 +1,40 @@
-<%= usuarios %>
-    <h1>Lista de Usuarios</h1>
-    <p>Aqui se listan tods los usuarios del sistema de mascotas</p>
+<h1>Lista de Usuarios</h1>
+<div class="col-sm-9">
+    <p>Aqui se listan todos los usuarios del sistema de mascotas.</p>
+</div>
 
-    <% for(var i=0; i<usuarios.length; i++) {%>
+<div class="col-sm-3">
+    <a href="/crearUsuario" class="btn btn-block btn-success">Crear Usuario</a>
+</div>
 
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-4">
-                <div class="text-center ma-borde ma-padding-top-bottom">
-                    <h1><%= i+1 %><%= " " + usuarios[i].apellidos %></h1>
-                </div>
+
+<% for(var i=0; i<usuarios.length; i++) {%>
+    <div class="row ma-margen-top-bottom">
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-4">
+            <div class="text-center ma-borde ma-padding-top-bottom">
+                <h2> <%= usuarios[i].apellidos %></h2>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-5">
-                <div class="text-center ma-borde ma-margen-top-bottom" style="margin-top: 40px;">
-                    <p>
-                        <%= usuarios[i].apellidos %>
-                            <%= usuarios[i].nombres %>
-                    </p>
-                    <p>
-                        <%= usuarios[i].apellidos %>
-                            <%= usuarios[i].correo %>
-                    </p>
 
-                </div>
-            </div>
-            <div class="col-sm-1"></div>
         </div>
 
 
-        <% }%>
+
+        <div class="col-sm-1"></div>
+
+        <div class="col-sm-5 text-center">
+            <div class="text-center ma-borde" style="margin-top: 40px;">
+                <p>
+                    <%= usuarios[i].apellidos %>
+                        <%= usuarios[i].nombres %>
+                </p>
+                <p>
+                    <%= usuarios[i].correo %>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-sm-1"></div>
+    </div>
+    <% }%>

@@ -40,7 +40,23 @@ module.exports = {
                         });
                     }
 
-                    return res.view('vistas/Usuario/crearUsuario');
+                    Usuario.find()
+                        .exec(function (errorIndefinido, usuariosEncontrados) {
+
+                            if (errorIndefinido) {
+                                res.view('vistas/Error', {
+                                    error: {
+                                        desripcion: "Hubo un problema cargando los Usuarios",
+                                        rawError: errorIndefinido,
+                                        url: "/ListarUsuarios"
+                                    }
+                                });
+                            }
+
+                            res.view('usuario/ListarUsuarios', {
+                                usuarios: usuariosEncontrados
+                            });
+                        })
 
 
                 })
@@ -73,8 +89,8 @@ module.exports = {
         }
 
     }
-    
-    
-    
-    
+
+
+
+
 };
