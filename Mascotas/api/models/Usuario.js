@@ -22,6 +22,10 @@ module.exports = {
           type:'string',
           email:true,
           defaultsTo:'correo@invalido.com'
+      },
+      passwor:{
+          type:'string',
+          defaultsTo:"123456"
       }
   }
     

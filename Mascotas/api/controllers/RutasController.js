@@ -44,7 +44,7 @@ module.exports = {
     },
 
     
-    
+   
     editarUsuario: function (req, res) {
 
         var parametros = req.allParams();
@@ -53,51 +53,44 @@ module.exports = {
 
             Usuario.findOne({
                 id: parametros.id
-
-            }).exec(function (errorInesperado, UsuarioEcontrado) {
-
+            }).exec(function (errorInesperado, UsuarioEncontrado) {
                 if (errorInesperado) {
-
                     return res.view('vistas/Error', {
                         error: {
-                            desripcion: "error Inesperado",
-                            rawError: "Faltan Parametros",
+                            desripcion: "Error Inesperado",
+                            rawError: errorInesperado,
                             url: "/ListarUsuarios"
                         }
                     });
-
                 }
-
-                if (UsuarioEncontrado) {
-                    
-                    
-                } else {   
-
+                if(UsuarioEncontrado){
+                     return res.view("vistas/Usuario/editarUsuario",{
+                         usuarioAEditar:UsuarioEncontrado
+                     });
+                }else{
                     return res.view('vistas/Error', {
                         error: {
-                            desripcion: "El usuariocon ese ID no existe",
-                            rawError: "No existe un usuario con ese ID",
+                            desripcion: "El usuario con id: "+parametros.id+" no existe.",
+                            rawError: "No existe el usuario",
                             url: "/ListarUsuarios"
                         }
                     });
-
-
                 }
-
-                sails.log.info(UsuarioEcontrado);
             })
-
         } else {
 
             return res.view('vistas/Error', {
                 error: {
-                    desripcion: "No ha enviado el Parametro ID",
+                    desripcion: "No ha enviado el parametro ID",
                     rawError: "Faltan Parametros",
                     url: "/ListarUsuarios"
                 }
             });
+
         }
-        return res.view("vistas/Usuario/editarUsuario")
     }
+
+
+
 
 };
