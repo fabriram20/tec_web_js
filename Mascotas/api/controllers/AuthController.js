@@ -45,7 +45,7 @@ module.exports = {
                             });
                         },
                         incorrect: function () {
-                            
+
                             return res.view('vistas/Error', {
                                 error: {
                                     desripcion: "Ingrese su password correctamente",
@@ -56,11 +56,11 @@ module.exports = {
 
                         },
                         success: function () {
-                            
-                            req.session.credencialSEgura = true;
+
+                            req.session.credencialSegura = UsuarioEncontrado;
                             return res.view("vistas/home")
-                            
-                            
+
+
                         },
                     });
 
@@ -92,7 +92,7 @@ module.exports = {
 
 
 
-    }
+    },
 
     //    DONE - Validar si envian parametros
 
@@ -102,11 +102,21 @@ module.exports = {
 
     //    Entregar credencial
 
+    tieneSesion: function (req, res) {
+
+        if (req.session.credencialSegura) {
+            return res.ok("Si tiene la credencia segura");
+        } else {
+            return res.forbidden();
+        }
 
 
-
-
-
+    },
+    
+    logout: function (req,res){
+        req.session.credencialSegura=undefined;
+        return res.view("Login");
+    }
 
 
 
