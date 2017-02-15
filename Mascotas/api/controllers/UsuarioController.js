@@ -201,6 +201,7 @@ module.exports = {
             
 
         } else {
+            
             return res.view('vistas/Error', {
                 error: {
                     desripcion: "Necesitamos que envies el ID y el nombre, apellido o correo",
@@ -208,6 +209,7 @@ module.exports = {
                     url: "/ListarUsuarios"
                 }
             });
+            
         }
 
 
