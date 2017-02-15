@@ -56,7 +56,11 @@ module.exports = {
 
                         },
                         success: function () {
-                            return res.ok("Credencial Segura")
+                            
+                            req.session.credencialSEgura = true;
+                            return res.view("vistas/home")
+                            
+                            
                         },
                     });
 
