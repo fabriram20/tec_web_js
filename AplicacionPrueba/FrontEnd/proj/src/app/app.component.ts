@@ -26,7 +26,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this._http.get(this._masterURL.url + "tienda").subscribe(
       (res: Response) => {
-        this.tiendas = res.json();
+        this.tiendas = res.json()
+          .map((value)=>{
+          value.formularioCerrado = true;
+          return value;
+          });
       },
       (err) => {
         console.log(err);
@@ -79,6 +83,20 @@ export class AppComponent implements OnInit {
       }
     )
 
+  }
+
+  actualizarTienda(tienda:any){
+    let parametros={
+      nombre:tienda.nombre
+    };
+    this._http.put(this._masterURL.url+"Tienda/"+tienda.id,parametros).subscribe(
+      (res:Response)=>{
+        console.log("Respuesta: ",res.json());
+      },
+      (err)=>{
+        console.log("Error: ",err)
+      }
+    )
   }
 
 }
