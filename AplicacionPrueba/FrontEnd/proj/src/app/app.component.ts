@@ -11,12 +11,7 @@ import {NgForm} from "@angular/forms";
 })
 // CTRL A +  -  CTRL + ALT + L
 export class AppComponent implements OnInit {
-  title: string = "Hola Amigos";
-  nombre: string = "";
-  apellido: string = "";
-  colorH4 = "red";
-  tamanoH4 = "52px";
-  classes = "btn btn-block btn-success";
+  title: string = "Bienvenido a ingresar tiendas";
   error:string="No hay errores";
 
   nuevaTienda={};
@@ -26,30 +21,11 @@ export class AppComponent implements OnInit {
   }
 
   constructor(private _http: Http, private _masterURL:MasterURLService) {
-    this.apellido = "Ramirez";
-    this.nombre = "Fabro";
-    console.log("Inicio el constructor")
   }
 
   ngOnInit() {
-    this.apellido = "Cutimbo";
-    this.nombre = "Eloy";
-    console.log("On Init")
-  }
 
-  nombreCompleto(): string {
-    return `${this.nombre} ${this.apellido}`
   }
-
-  hizoClick() {
-    console.log("Hizo Click");
-    console.log()
-  }
-
-  hizoFocus() {
-    console.log("Hizo focus");
-  }
-
 
   crearTienda(formulario:NgForm){
     this.disabledButtons.NuevatiendaFormSubmitButton=true;
@@ -82,4 +58,5 @@ export class AppComponent implements OnInit {
       //   }
       // );
   }
+
 }
