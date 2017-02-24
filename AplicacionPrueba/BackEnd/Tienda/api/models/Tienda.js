@@ -8,8 +8,12 @@
 module.exports = {
 
   attributes: {
-    collection:"Producto",
-    via:"idTienda"
+
+    productos:{
+      collection:"Producto",
+      via:"idTienda"
+    }
+
   }
 };
 
