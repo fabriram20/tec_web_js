@@ -1,23 +1,53 @@
 <h1>{{title}}</h1>
+<h2>{{error}}</h2>
 <div class="container">
-  <form (ngSubmit)="crearTienda(nuevaTienda)" #NuevaTiendaForm="ngForm">
-    <div class="form-group">
-
+  <div class="row">
+    <div class="col-sm-12">
+      <pre>
+        {{nuevaTienda|json}}
+      </pre>
+    </div>
+    <div class="col-sm-6">
+      <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+        <div class="form-group">
+          <label>Tienda</label>
+          <!--<pre>{{nombre|json}}</pre>-->
+          <span class="bg-primary" *ngIf="nombre.errors && (nombre.dirty || nombre.touched)">Ingrese un nombre minimo con 4 caracteres</span>
+          <input required
+                 minlength="4"
+                 type="text"
+                 class="form-control"
+                 placeholder="Digite un nombre de tienda como: Adidas"
+                 name="nombre"
+                 [(ngModel)]="nuevaTienda.nombre"
+                 #nombre="ngModel"
+                 #nombreElm>
+        </div>
+        <button [disabled]="disabledButtons.NuevatiendaFormSubmitButton||!NuevaTiendaForm.valid" type="submit"
+                class="btn btn-block btn-success">Crear
+        </button>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <h1>{{nuevaTienda.nombre}}</h1>
     </div>
 
-  </form>
+  </div>
+
+
 </div>
 
+
 <!--<h1>-->
-  <!--{{title}}-->
+<!--{{title}}-->
 <!--</h1>-->
 <!--<p>-->
-  <!--{{nombre}} - {{apellido}}-->
+<!--{{nombre}} - {{apellido}}-->
 <!--</p>-->
 <!--&lt;!&ndash;<h3>&ndash;&gt;-->
-  <!--&lt;!&ndash;{{nombreCompleto()}}&ndash;&gt;-->
+<!--&lt;!&ndash;{{nombreCompleto()}}&ndash;&gt;-->
 <!--&lt;!&ndash;</h3>&ndash;&gt;-->
 <!--<h3 [innerHTML]="nombreCompleto()" (click)="hizoClick()" (mouseenter)="hizoFocus()"-->
-    <!--[style.backgroundColor]= "colorH4" [style.fontSize]="tamanoH4" [class]="classes"-->
+<!--[style.backgroundColor]= "colorH4" [style.fontSize]="tamanoH4" [class]="classes"-->
 <!--#NombreUsuario></h3>-->
 <!--<input type="text" [placeholder]="nombreCompleto()">-->
