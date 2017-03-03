@@ -116,8 +116,7 @@ module.exports = {
                                 }
                             });
                         }
-
-                        res.view('vistas/Usuario/ListarUsuarios', {
+                        res.view('Usuario/ListarUsuarios', {
                             usuarios: usuariosEncontrados
                         });
                     })
@@ -137,8 +136,8 @@ module.exports = {
 
         var parametros = req.allParams();
 
-        if (parametros.idUsuario && (parametros.nombres || parametros.apellidos || parametros.correo)) {
-            
+        if (parametros.id && (parametros.nombres || parametros.apellidos || parametros.correo)) {
+
             var usuarioAEditar = {
                 nombres: parametros.nombres,
                 apellidos: parametros.apellidos,
@@ -154,11 +153,9 @@ module.exports = {
             if (usuarioAEditar.correo == "") {
                 delete usuarioAEditar.correo
             }
-            
-            
 
             Usuario.update({
-                    id: parametros.idUsuario
+                    id: parametros.id
                 }, usuarioAEditar)
                 .exec(function (errorInesperado, UsuarioRemovido) {
                     if (errorInesperado) {
@@ -170,7 +167,7 @@ module.exports = {
                             }
                         });
                     }
-                
+
                     Usuario.find()
                         .exec(function (errorIndefinido, usuariosEncontrados) {
 
@@ -184,20 +181,15 @@ module.exports = {
                                 });
                             }
 
-                            res.view('vistas/Usuario/ListarUsuarios', {
+                            res.view('Usuario/ListarUsuarios', {
                                 usuarios: usuariosEncontrados
                             });
                         })
 
                 })
-            
-            
-            
-            
-            
 
         } else {
-            
+
             return res.view('vistas/Error', {
                 error: {
                     desripcion: "Necesitamos que envies el ID y el nombre, apellido o correo",
@@ -205,7 +197,7 @@ module.exports = {
                     url: "/ListarUsuarios"
                 }
             });
-            
+
         }
 
 

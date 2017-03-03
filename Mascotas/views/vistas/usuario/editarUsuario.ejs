@@ -1,46 +1,47 @@
-<h1>Editar Usuario  - <%= usuarioAEditar.nombres %></h1>
+<h1>Editar Usuario - <%= usuarios.nombres %></h1>
 
 
 <div class="row">
-    <div class="col-sm-5">
+  <div class="col-sm-5">
 
-        <form action="/Usuario/EditarUsuario" method="post">
-            <div class="form-group">
-                <label>Nombres</label>
+    <form action="/Usuario/EditarUsuario" method="post">
+      <div class="form-group">
+        <label>Nombres</label>
 
-                <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres" value="<%= usuarioAEditar.nombres %>">
+        <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres"
+               value="<%= usuarios.nombres %>">
 
+      </div>
+      <div class="form-group">
+        <label>Apellidos</label>
+        <input type="text" class="form-control" placeholder="Ingrese sus Apellidos" name="apellidos"
+               value="<%= usuarios.apellidos %>">
+      </div>
 
-            </div>
-            <div class="form-group">
-                <label>Apellidos</label>
-                <input type="text" class="form-control" placeholder="Ingrese sus Apellidos" name="apellidos" value="<%= usuarioAEditar.apellidos %>">
-            </div>
-
-            <div class="form-group">
-                <label>Correo</label>
-
-
-                <input type="email" class="form-control" placeholder="Ingrese su correo" name="correo" value="<%= usuarioAEditar.correo %>">
-
-                <input type="hidden" name="idUsuario" value="<%= usuarioAEditar.id %>">
+      <div class="form-group">
+        <label>Correo</label>
 
 
+        <input type="email" class="form-control" placeholder="Ingrese su correo" name="correo"
+               value="<%= usuarios.correo %>">
 
-            </div>
-            <button type="submit" class="btn btn-success btn-block">Editar Usuario :)</button>
-        </form>
+        <input type="hidden" name="idUsuario" value="<%= usuarios.id %>">
 
-    </div>
-    <div class="col-sm-2"></div>
 
-    <div class="col-sm-5 text-center">
+      </div>
+      <button type="submit" class="btn btn-success btn-block">Editar Usuario</button>
+    </form>
 
-        <h2><%= usuarioAEditar.apellidos%></h2>
-        <h4><%= usuarioAEditar.nombres%></h4>
-        <p>
-            <%= usuarioAEditar.correo%>
-        </p>
+  </div>
+  <div class="col-sm-2"></div>
 
-    </div>
+  <div class="col-sm-5 text-center">
+
+    <h2><%= usuarioAEditar.apellidos %></h2>
+    <h4><%= usuarioAEditar.nombres %></h4>
+    <p>
+      <%= usuarioAEditar.correo %>
+    </p>
+
+  </div>
 </div>
