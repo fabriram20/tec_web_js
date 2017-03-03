@@ -34,11 +34,20 @@ module.exports.routes = {
     
     'get /': 'RutasController.home',
     'get /Inicio': 'RutasController.home',
+    'get /Error': 'RutasController.error',
 
     'get /CrearUsuario': 'RutasController.crearUsuario',
     'get /ListarUsuarios': 'RutasController.listarUsuarios',
     'get /EditarUsuario': 'RutasController.editarUsuario',
-    'get /Error': 'RutasController.error',
+    
+    'get /CrearMascota': 'RutasController.crearMascota',
+    'get /ListarMascota': 'RutasController.listarMascota',
+//    'get /EditarMascota': 'RutasController.editarMascota',
+    
+    'get /CrearRaza': 'RutasController.crearRaza',
+    'get /ListarRaza': 'RutasController.listarRaza'
+//    'get /EditarRaza': 'RutasController.editarRaza'
+    
 
   /***************************************************************************
   *                                                                          *

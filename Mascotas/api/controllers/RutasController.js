@@ -10,9 +10,6 @@ module.exports = {
     home: function (req, res) {
         return res.view('vistas/home');
     },
-    crearUsuario: function (req, res) {
-        return res.view('vistas/Usuario/crearUsuario');
-    },
     error: function (req, res) {
         return res.view('vistas/Error', {
             error: {
@@ -22,6 +19,11 @@ module.exports = {
             }
         });
     },
+    
+    /////////Usuario//////////
+    crearUsuario: function (req, res) {
+        return res.view('vistas/usuario/crearUsuario');
+    },        
     listarUsuarios: function (req, res) {
 
         Usuario.find()
@@ -30,21 +32,18 @@ module.exports = {
                 if (errorIndefinido) {
                     res.view('vistas/Error', {
                         error: {
-                            desripcion: "Hubo un problema cargando los Usuarios",
+                            desripcion: "Hubo un problema listando los Usuarios",
                             rawError: errorIndefinido,
                             url: "/ListarUsuarios"
                         }
                     });
                 }
 
-                res.view('vistas/Usuario/ListarUsuarios', {
+                res.view('vistas/usuario/ListarUsuarios', {
                     usuarios: usuariosEncontrados
                 });
             })
-    },
-
-    
-   
+    },    
     editarUsuario: function (req, res) {
 
         var parametros = req.allParams();
@@ -88,9 +87,55 @@ module.exports = {
             });
 
         }
-    }
+    },
+    
+    /////////Mascota//////////    
+    crearMascota: function(req, res){
+        return res.view('vistas/mascota/crearMascota');
+    },
+    listarMascota: function (req, res) {
 
+        Mascota.find()
+            .exec(function (err, mascotasEncontradas) {
 
+                if (err) {
+                    res.view('vistas/Error', {
+                        error: {
+                            desripcion: "Hubo un problema listando las Mascotas",
+                            rawError: err,
+                            url: "/ListarMascotas"
+                        }
+                    });
+                }
 
+                res.view('vistas/Mascota/ListarMascota', {
+                    mascotas: mascotasEncontradas
+                });
+            })
+    },
+    
+    /////////Raza//////////    
+    crearRaza: function(req, res){
+        return res.view('vistas/Raza/crearRaza');
+    },
+    listarRaza: function (req, res) {
+        Raza.find()
+            .exec(function (err, razasEncontradas) {
+
+                if (err) {
+                    res.view('vistas/Error', {
+                        error: {
+                            desripcion: "Hubo un problema listando las Razas",
+                            rawError: err,
+                            url: "/ListarRaza"
+                        }
+                    });
+                }
+
+                res.view('vistas/Raza/ListarRaza', {
+                    razas: razasEncontradas
+                });
+            })
+    }  
 
 };
