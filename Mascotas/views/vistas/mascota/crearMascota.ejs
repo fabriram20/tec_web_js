@@ -3,8 +3,8 @@
 <form action="/Mascota/crearMascota" method="post">
 
     <div class="form-group">
-        <label for="exampleInputEmail1">Nombre</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su Nombre" name="nombres">
+        <label >Nombre</label>
+        <input type="text" class="form-control" placeholder="Ingrese su Nombre" name="nombre">
     </div>
 
     <div class="form-group">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="form-group">
-        <label for="">Raza</label>
+        <label>Raza</label>
         <select class="form-control" name="idRaza">
             <% for(var i=0; i<razas.length; i++){ %>
                 <option value='<%= razas[i].id %>'>
@@ -29,7 +29,7 @@
         <select class="form-control" name="paisNacimiento">
             <option value='Ecuador'>Ecuador</option>
             <option value='Colombia'>Colombia</option>
-            <option value='Perú'>Perú</option>
+            <option value='Peru'>Perú</option>
         </select>
 
     </div>

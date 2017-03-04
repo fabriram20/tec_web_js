@@ -1,0 +1,25 @@
+
+<h1>Editar Raza - <%= razas.nombre %></h1>
+
+
+<div class="row">
+  <div class="col-sm-5">
+
+    <form action="/Raza/editarRaza" method="post">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" placeholder="Ingrese nombre Raza" name="nombre" value="<%= razas.nombre %>">
+      </div>
+      <input type="hidden" name="id" value="<%= razas.id %>">
+      <button type="submit" class="btn btn-success btn-block">Editar Raza</button>
+    </form>
+
+  </div>
+  <div class="col-sm-2"></div>
+
+  <div class="col-sm-5 text-center">
+
+    <h2><%= razas.nombre %></h2>
+
+  </div>
+</div>

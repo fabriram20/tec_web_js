@@ -1,34 +1,47 @@
-<h1>Editar Información Mascota  - <%= usuarioAEditar.nombres %></h1>
+<h1>Editar Información Mascota  - <%= mascotas.nombre %></h1>
 
 
 <div class="row">
     <div class="col-sm-5">
 
-        <form action="/Usuario/EditarUsuario" method="post">
-            <div class="form-group">
-                <label>Nombres</label>
+        <form action="/Mascota/EditarMascota" method="post">
 
-                <input type="text" class="form-control" placeholder="Ingrese sus Nombres" name="nombres" value="<%= usuarioAEditar.nombres %>">
+          <div class="form-group">
+            <label >Nombre</label>
+            <input type="text" class="form-control" placeholder="Ingrese su Nombre" name="nombre" value="<%= mascotas.nombre %>">
+          </div>
 
+          <div class="form-group">
+            <label>Fecha de Nacimiento</label>
+            <input type="date" class="form-control" placeholder="Ingrese su Fecha de Nacimiento" name="fechaNacimiento" value="<%= mascotas.fechaNacimiento %>">
+          </div>
 
-            </div>
-            <div class="form-group">
-                <label>Apellidos</label>
-                <input type="text" class="form-control" placeholder="Ingrese sus Apellidos" name="apellidos" value="<%= usuarioAEditar.apellidos %>">
-            </div>
+          <div class="form-group">
+            <label>Raza</label>
+            <select class="form-control" name="idRaza">
+              <% for(var i=0; i<razas.length; i++){ %>
+              <option value='<%= razas[i].id %>'>
+                <%= razas[i].nombre %>
+              </option>
+              <%  } %>
+            </select>
 
-            <div class="form-group">
-                <label>Correo</label>
+          </div>
 
+          <div class="form-group">
+            <label>Pais de Nacimiento</label>
+            <select class="form-control" name="paisNacimiento">
+              <option value='Ecuador'>Ecuador</option>
+              <option value='Colombia'>Colombia</option>
+              <option value='Peru'>Perú</option>
+            </select>
 
-                <input type="email" class="form-control" placeholder="Ingrese su correo" name="correo" value="<%= usuarioAEditar.correo %>">
+          </div>
 
-                <input type="hidden" name="idUsuario" value="<%= usuarioAEditar.id %>">
+          <input type="hidden" name="id" value="<%= mascotas.id %>">
 
+          <button type="submit" class="btn btn-success">Editar Mascota</button>
 
-
-            </div>
-            <button type="submit" class="btn btn-success btn-block">Editar Usuario :)</button>
         </form>
 
     </div>
@@ -36,10 +49,11 @@
 
     <div class="col-sm-5 text-center">
 
-        <h2><%= usuarioAEditar.apellidos%></h2>
-        <h4><%= usuarioAEditar.nombres%></h4>
+        <h2><%= mascotas.nombre%></h2>
+        <h4><%= mascotas.fechaNacimiento%></h4>
+      <h4><%= mascotas.paisNacimiento%></h4>
         <p>
-            <%= usuarioAEditar.correo%>
+            <%= mascotas.idRaza%>
         </p>
 
     </div>

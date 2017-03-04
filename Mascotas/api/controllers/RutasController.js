@@ -44,12 +44,9 @@ module.exports = {
         });
       })
   },
-  editarUsuario: function (req, res) {
-
+  editarUsuarioRuta: function (req, res) {
     var parametros = req.allParams();
-
     if (parametros.id) {
-
       Usuario.findOne({
         id: parametros.id
       }).exec(function (errorInesperado, UsuarioEncontrado) {
@@ -63,7 +60,7 @@ module.exports = {
           });
         }
         if (UsuarioEncontrado) {
-          return res.view("vistas/Usuario/editarUsuario", {
+          return res.view("vistas/usuario/editarUsuario", {
             usuarios: UsuarioEncontrado
           });
         } else {
@@ -77,7 +74,6 @@ module.exports = {
         }
       })
     } else {
-
       return res.view('vistas/Error', {
         error: {
           desripcion: "No ha enviado el parametro ID",
@@ -85,7 +81,6 @@ module.exports = {
           url: "/ListarUsuarios"
         }
       });
-
     }
   },
 
@@ -99,7 +94,6 @@ module.exports = {
       });
     });
   },
-
   listarMascota: function (req, res) {
 
     Mascota.find()
@@ -119,6 +113,51 @@ module.exports = {
           mascotas: mascotasEncontradas
         });
       })
+  },
+  editarMascotaRuta: function (req, res) {
+    var parametros = req.allParams();
+    if (parametros.id) {
+      Mascota.findOne({
+        id: parametros.id
+      }).exec(function (errorInesperado, MascotaEncontrado) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              desripcion: "Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarMascota"
+            }
+          });
+        }
+///////////
+        Raza.find().exec(function (error, razasEncontradas) {
+          if (error) return res.serverError();
+
+          if (MascotaEncontrado) {
+            return res.view("vistas/Mascota/editarMascota", {
+              mascotas: MascotaEncontrado,
+              razas: razasEncontradas
+            });
+          } else {
+            return res.view('vistas/Error', {
+              error: {
+                desripcion: "El usuario con id: " + parametros.id + " no existe.",
+                rawError: "No existe el usuario",
+                url: "/ListarMascota"
+              }
+            });
+          }
+        })
+      })
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          desripcion: "No ha enviado el parametro ID",
+          rawError: "Faltan Parametros",
+          url: "/ListarMascota"
+        }
+      });
+    }
   },
 
   /////////Raza//////////
@@ -143,6 +182,45 @@ module.exports = {
           razas: razasEncontradas
         });
       })
+  },
+  editarRazaRuta: function (req, res) {
+    var parametros = req.allParams();
+    if (parametros.id) {
+      Raza.findOne({
+        id: parametros.id
+      }).exec(function (errorInesperado, RazaEncontrado) {
+        if (errorInesperado) {
+          return res.view('vistas/Error', {
+            error: {
+              desripcion: "Error Inesperado",
+              rawError: errorInesperado,
+              url: "/ListarRaza"
+            }
+          });
+        }
+        if (RazaEncontrado) {
+          return res.view("vistas/Raza/editarRaza", {
+            razas: RazaEncontrado
+          });
+        } else {
+          return res.view('vistas/Error', {
+            error: {
+              desripcion: "El usuario con id: " + parametros.id + " no existe.",
+              rawError: "No existe la raza",
+              url: "/ListarRaza"
+            }
+          });
+        }
+      })
+    } else {
+      return res.view('vistas/Error', {
+        error: {
+          desripcion: "No ha enviado el parametro ID",
+          rawError: "Faltan Parametros",
+          url: "/ListarRaza"
+        }
+      });
+    }
   }
 
 };

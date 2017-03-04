@@ -1,11 +1,11 @@
-<h1>Lista de Mascotas</h1>
+<h1>Lista de Razas</h1>
 
 <div class="row">
     <div class="col-sm-9">
         <p>Aqui se listan las Razas Registradas.</p>
     </div>
     <div class="col-sm-3">
-        <a href="/CrearUsuario" class="btn btn-block btn-success">
+        <a href="/CrearRaza" class="btn btn-block btn-success">
            Crear Raza
        </a>
     </div>
@@ -25,13 +25,13 @@
         <div class="col-sm-5 text-center">
             <div class="text-center ma-borde" style="margin-top: 40px;">
                 <p>
-                    <%= razas[i].nombre %>                       
-                </p>                
+                    <%= razas[i].nombre %>
+                </p>
             </div>
         </div>
         <div class="col-sm-1">
-            <a href="" class="btn btn-danger btn-block">Borrar</a>
-            <a href="" class="btn btn-info btn-block">Editar</a>
+            <a href="/Raza/borrarRaza?id=<%= razas[i].id %>" class="btn btn-danger btn-block">Borrar</a>
+            <a href="/editarRazaRuta?id=<%= razas[i].id %>" class="btn btn-info btn-block">Editar</a>
 
         </div>
     </div>

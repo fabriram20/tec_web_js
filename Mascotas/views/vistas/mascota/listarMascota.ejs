@@ -5,7 +5,7 @@
         <p>Aqui se listan todas las Mascotas Registradas.</p>
     </div>
     <div class="col-sm-3">
-        <a href="/CrearUsuario" class="btn btn-block btn-success">
+        <a href="/CrearMascota" class="btn btn-block btn-success">
            Crear Mascota
        </a>
     </div>
@@ -28,7 +28,7 @@
                     <%= mascotas[i].nombre %>
                 </p>
                 <p>
-                    <%= mascotas[i].fechaNacimiento %>                        
+                    <%= mascotas[i].fechaNacimiento %>
                 </p>
                 <p>
                     <%= mascotas[i].paisNacimiento %>
@@ -36,8 +36,8 @@
             </div>
         </div>
         <div class="col-sm-1">
-            <a href="/Usuario/BorrarUsuario?id=<%= usuarios[i].id %>" class="btn btn-danger btn-block">Borrar</a>
-            <a href="/EditarUsuario?id=<%= usuarios[i].id %>" class="btn btn-info btn-block">Editar</a>
+            <a href="/Mascota/BorrarMascota?id=<%= mascotas[i].id %>" class="btn btn-danger btn-block">Borrar</a>
+            <a href="/editarMascotaRuta?id=<%= mascotas[i].id %>" class="btn btn-info btn-block">Editar</a>
 
         </div>
     </div>

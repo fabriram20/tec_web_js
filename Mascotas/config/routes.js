@@ -23,40 +23,40 @@
 module.exports.routes = {
 
   /***************************************************************************
-  *                                                                          *
-  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
-  * etc. depending on your default view engine) your home page.              *
-  *                                                                          *
-  * (Alternatively, remove this and add an `index.html` file in your         *
-  * `assets` directory)                                                      *
-  *                                                                          *
-  ***************************************************************************/
-    
-    'get /': 'RutasController.home',
-    'get /Inicio': 'RutasController.home',
-    'get /Error': 'RutasController.error',
+   *                                                                          *
+   * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
+   * etc. depending on your default view engine) your home page.              *
+   *                                                                          *
+   * (Alternatively, remove this and add an `index.html` file in your         *
+   * `assets` directory)                                                      *
+   *                                                                          *
+   ***************************************************************************/
 
-    'get /CrearUsuario': 'RutasController.crearUsuario',
-    'get /ListarUsuarios': 'RutasController.listarUsuarios',
-    'get /EditarUsuario': 'RutasController.editarUsuario',
-    
-    'get /CrearMascota': 'RutasController.crearMascota',
-    'get /ListarMascota': 'RutasController.listarMascota',
-//    'get /EditarMascota': 'RutasController.editarMascota',
-    
-    'get /CrearRaza': 'RutasController.crearRaza',
-    'get /ListarRaza': 'RutasController.listarRaza'
-//    'get /EditarRaza': 'RutasController.editarRaza'
-    
+  'get /': 'RutasController.home',
+  'get /Inicio': 'RutasController.home',
+  'get /Error': 'RutasController.error',
+
+  'get /CrearUsuario': 'RutasController.crearUsuario',
+  'get /ListarUsuarios': 'RutasController.listarUsuarios',
+  'get /editarUsuarioRuta': 'RutasController.editarUsuarioRuta',
+
+  'get /CrearMascota': 'RutasController.crearMascota',
+  'get /ListarMascota': 'RutasController.listarMascota',
+  'get /editarMascotaRuta': 'RutasController.editarMascotaRuta',
+
+  'get /CrearRaza': 'RutasController.crearRaza',
+  'get /ListarRaza': 'RutasController.listarRaza',
+  'get /editarRazaRuta': 'RutasController.editarRazaRuta'
+
 
   /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  * If a request to a URL doesn't match any of the custom routes above, it   *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
+   *                                                                          *
+   * Custom routes here...                                                    *
+   *                                                                          *
+   * If a request to a URL doesn't match any of the custom routes above, it   *
+   * is matched against Sails route blueprints. See `config/blueprints.js`    *
+   * for configuration options and examples.                                  *
+   *                                                                          *
+   ***************************************************************************/
 
 };

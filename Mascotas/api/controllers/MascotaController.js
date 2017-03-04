@@ -17,7 +17,7 @@ module.exports = {
       if (parametros.nombre && parametros.idRaza) {
 
         var mascotaCrear = {
-          nombres: parametros.nombres,
+          nombre: parametros.nombre,
           fechaNacimiento: parametros.fechaNacimiento,
           paisNacimiento: parametros.paisNacimiento,
           idRaza: parametros.idRaza
@@ -80,9 +80,7 @@ module.exports = {
   },
   borrarMascota: function (req, res) {
     var parametros = req.allParams();
-
     if (parametros.id) {
-
       Mascota.destroy({
         id: parametros.id
       }).exec(function (errorInesperado, MascotaRemovido) {
@@ -128,17 +126,17 @@ module.exports = {
 
     var parametros = req.allParams();
 
-    if (parametros.idRaza && (parametros.nombres || parametros.fechaNacimiento || parametros.paisNacimiento)) {
+    if (parametros.idRaza && (parametros.nombre || parametros.fechaNacimiento || parametros.paisNacimiento)) {
 
       var mascotaEditar = {
-        nombres: parametros.nombres,
+        nombre: parametros.nombre,
         fechaNacimiento: parametros.fechaNacimiento,
         paisNacimiento: parametros.paisNacimiento,
         idRaza: parametros.idRaza
       }
 
-      if (mascotaEditar.nombres == "") {
-        delete mascotaEditar.nombres
+      if (mascotaEditar.nombre == "") {
+        delete mascotaEditar.nombre
       }
       if (mascotaEditar.fechaNacimiento == "") {
         delete mascotaEditar.fechaNacimiento

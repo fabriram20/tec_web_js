@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-sm-5">
 
-    <form action="/Usuario/EditarUsuario" method="post">
+    <form action="/Usuario/editarUsuario" method="post">
       <div class="form-group">
         <label>Nombres</label>
 
@@ -25,7 +25,7 @@
         <input type="email" class="form-control" placeholder="Ingrese su correo" name="correo"
                value="<%= usuarios.correo %>">
 
-        <input type="hidden" name="idUsuario" value="<%= usuarios.id %>">
+        <input type="hidden" name="id" value="<%= usuarios.id %>">
 
 
       </div>
@@ -37,10 +37,10 @@
 
   <div class="col-sm-5 text-center">
 
-    <h2><%= usuarioAEditar.apellidos %></h2>
-    <h4><%= usuarioAEditar.nombres %></h4>
-    <p>
-      <%= usuarioAEditar.correo %>
+    <h2><%= usuarios.apellidos %></h2>
+    <h4><%= usuarios.nombres %></h4>
+    <p>|
+      <%= usuarios.correo %>
     </p>
 
   </div>

@@ -87,7 +87,6 @@ module.exports = {
 
     },
     BorrarUsuario: function (req, res) {
-
         var parametros = req.allParams();
 
         if (parametros.id) {
@@ -116,7 +115,7 @@ module.exports = {
                                 }
                             });
                         }
-                        res.view('Usuario/ListarUsuarios', {
+                        res.view('vistas/usuario/listarUsuarios', {
                             usuarios: usuariosEncontrados
                         });
                     })
@@ -181,7 +180,7 @@ module.exports = {
                                 });
                             }
 
-                            res.view('Usuario/ListarUsuarios', {
+                            res.view('vistas/Usuario/ListarUsuarios', {
                                 usuarios: usuariosEncontrados
                             });
                         })
